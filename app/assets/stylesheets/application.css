@@ -1,0 +1,28 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+@import "ng-app/css/bootstrap.min";
+@import "ng-app/css/animate";
+@import "ng-app/css/font-awesome.min";
+@import "ng-app/css/prettyPhoto";
+@import "ng-app/css/main";
+
+ 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('ng-app/fonts/glyphicons-halflings-regular.eot');
+  src: url('ng-app/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+       url('ng-app/fonts/glyphicons-halflings-regular.woff') format('woff'), 
+       url('ng-app/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+       url('ng-app/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
