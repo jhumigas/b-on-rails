@@ -2,6 +2,19 @@ Rails.application.routes.draw do
 
 root 'application#index'
 get '*path' => 'application#index'
+# Routes for the app functions 
+resources :posts, only: [:create, :index, :show, :edit, :update, :destroy] do
+    resources :comments, only: [:show, :create, :destroy] do
+      member do
+       # put '/upvote' => 'comments#upvote'
+      end
+    end
+
+    member do
+      put '/upvote' => 'posts#upvote'
+    end
+  end
+resources :members, :services
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
