@@ -27,6 +27,7 @@ angular
                 .state('blog', {
                     url: '/blog',
                     templateUrl: '../assets/blog.html',
+                    controller: 'blogCtrl'
                 })
                 .state('contact', {
                     url: '/contact',

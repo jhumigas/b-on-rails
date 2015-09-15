@@ -59515,3 +59515,931 @@ Started GET "/assets/images/blog/blog2.jpg" for ::1 at 2015-09-14 18:04:16 +0200
 
 
 Started GET "/assets/contact-us.html" for ::1 at 2015-09-14 18:04:16 +0200
+
+
+Started GET "/" for ::1 at 2015-09-15 15:26:13 +0200
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 807ms (Views: 784.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-15 15:26:14 +0200
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:26:14 +0200
+
+
+Started GET "/assets/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:26:14 +0200
+
+
+Started GET "/assets/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/assets/ng-app/css/main" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/assets/ng-app/css/animate" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/assets/images/logo.png" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/assets/images/blog/thumb2.jpg" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/assets/images/blog/thumb1.jpg" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/assets/images/blog/thumb3.jpg" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/assets/ng-app/fonts/fontawesome-webfont.woff?v=3.2.1" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/assets/home.html" for ::1 at 2015-09-15 15:26:15 +0200
+
+
+Started GET "/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:26:15 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/font-awesome"}
+  Rendered application/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 127ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/animate" for ::1 at 2015-09-15 15:26:15 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/animate"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 260ms (Views: 258.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/main" for ::1 at 2015-09-15 15:26:15 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/main"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:26:15 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/bootstrap"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 92ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:26:15 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/prettyPhoto"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/portfolio/recent/item1.png" for ::1 at 2015-09-15 15:26:16 +0200
+
+
+Started GET "/assets/images/slider/bg2.jpg" for ::1 at 2015-09-15 15:26:16 +0200
+
+
+Started GET "/assets/images/slider/bg3.jpg" for ::1 at 2015-09-15 15:26:16 +0200
+
+
+Started GET "/assets/images/slider/bg1.jpg" for ::1 at 2015-09-15 15:26:16 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item3.png" for ::1 at 2015-09-15 15:26:16 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item2.png" for ::1 at 2015-09-15 15:26:16 +0200
+
+
+Started GET "/assets/about-us.html" for ::1 at 2015-09-15 15:33:52 +0200
+
+
+Started GET "/assets/images/team-member.jpg" for ::1 at 2015-09-15 15:33:52 +0200
+
+
+Started GET "/assets/services.html" for ::1 at 2015-09-15 15:34:02 +0200
+
+
+Started GET "/assets/portofolio.html" for ::1 at 2015-09-15 15:34:21 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item2.jpg" for ::1 at 2015-09-15 15:34:21 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item1.jpg" for ::1 at 2015-09-15 15:34:21 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item3.jpg" for ::1 at 2015-09-15 15:34:21 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item6.jpg" for ::1 at 2015-09-15 15:34:21 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item4.jpg" for ::1 at 2015-09-15 15:34:21 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item5.jpg" for ::1 at 2015-09-15 15:34:21 +0200
+
+
+Started GET "/assets/images/portfolio/full/item2.jpg" for ::1 at 2015-09-15 15:34:27 +0200
+
+
+Started GET "/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:34:28 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/bootstrap"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 303ms (Views: 301.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:34:29 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/font-awesome"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/animate" for ::1 at 2015-09-15 15:34:29 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/animate"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 116ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:34:29 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/prettyPhoto"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 130ms (Views: 128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/main" for ::1 at 2015-09-15 15:34:29 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/main"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 207ms (Views: 206.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/portfolio/thumb/item1.jpg" for ::1 at 2015-09-15 15:34:29 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item4.jpg" for ::1 at 2015-09-15 15:34:29 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item5.jpg" for ::1 at 2015-09-15 15:34:29 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item6.jpg" for ::1 at 2015-09-15 15:34:29 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item2.jpg" for ::1 at 2015-09-15 15:34:29 +0200
+
+
+Started GET "/assets/images/portfolio/thumb/item3.jpg" for ::1 at 2015-09-15 15:34:29 +0200
+
+
+Started GET "/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:34:36 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/font-awesome"}
+  Rendered application/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 163ms (Views: 161.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:34:36 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/bootstrap"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 119ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/main" for ::1 at 2015-09-15 15:34:36 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/main"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 103ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/animate" for ::1 at 2015-09-15 15:34:37 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/animate"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:34:37 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/prettyPhoto"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 151ms (Views: 150.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:34:37 +0200
+
+
+Started GET "/assets/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:34:37 +0200
+
+
+Started GET "/assets/ng-app/css/animate" for ::1 at 2015-09-15 15:34:37 +0200
+
+
+Started GET "/assets/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:34:37 +0200
+
+
+Started GET "/assets/ng-app/css/main" for ::1 at 2015-09-15 15:34:37 +0200
+
+
+Started GET "/assets/home.html" for ::1 at 2015-09-15 15:34:40 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item3.png" for ::1 at 2015-09-15 15:34:40 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item1.png" for ::1 at 2015-09-15 15:34:40 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item2.png" for ::1 at 2015-09-15 15:34:40 +0200
+
+
+Started GET "/assets/images/slider/bg1.jpg" for ::1 at 2015-09-15 15:34:40 +0200
+
+
+Started GET "/assets/images/slider/bg2.jpg" for ::1 at 2015-09-15 15:34:40 +0200
+
+
+Started GET "/assets/images/slider/bg3.jpg" for ::1 at 2015-09-15 15:34:40 +0200
+
+
+Started GET "/" for ::1 at 2015-09-15 15:38:07 +0200
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-3b980a22cc7f1242cdc4eb4dc9fbdd7912920de0fac9d556369c02f85d2db918.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/angular-animate/angular-animate.self-aa58ee4ac692876e0798ee2af177a0190826aca24de054d1de7d8da972b42a27.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-e6764caa085b2bbaaf74c1afbb77982d52f0e95f15b5e06c8606fa762d42f75c.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/angular/angular.self-05cb83d5435bbe02c7b75c2b3975cc6a09346a72503c35931fca161177c6d8bd.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/application.self-db15de60cb1f0a6d37563715ba37e4c447ad1d3dce8ef15121df06d8c7dbac97.css?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/angular-bootstrap/ui-bootstrap-tpls.self-cd3eb791825fc3d9cff7b1178d834a50cc4393ee4851a3c087428666dcccb810.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/bootstrap.min.self-1b2106e2c41fcb513369ff599bd566501e08088288b914c2af8ef2e5c9acd29d.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/html5shiv.self-1f432d487ed3790f765994dd831280ac2373eb894c0c2cec7b1fc3372f1ac6db.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/jquery.isotope.min.self-e6d494265154578881e7379b7199ac5d79c4c2cd3780cef2f559c2e97e075703.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/jquery.prettyPhoto.self-6aa4a750d3d56d3e01be3f11ba7ca78d76c80937f72f96d1557338f31b942a7a.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/ng-app/css/animate" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/ng-app/css/main" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/main.self-97fd48a54e4e83dd5216b7b405a318828b9d049460498adbbbf8b18f8e50a1cf.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/ng-app/app.self-46577727230b9d9d11fb71636f0a904b134697e4d89e3c4b571f5016e858cfe5.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/ng-app/controllers/home.self-8c42b2cc8616697b2eb7174407ca1e5d37a226a9ca77ca6bcf09d8c15534c979.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/respond.min.self-ce6956f02c4ea8da8c7946401a8c7eeae9f685c7375faf62e00be01a31aac68f.js?body=1" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/images/logo.png" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/images/blog/thumb1.jpg" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/images/blog/thumb2.jpg" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/images/blog/thumb3.jpg" for ::1 at 2015-09-15 15:38:07 +0200
+
+
+Started GET "/assets/application.self-db15de60cb1f0a6d37563715ba37e4c447ad1d3dce8ef15121df06d8c7dbac97.css?body=1" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/assets/ng-app/fonts/fontawesome-webfont.woff?v=3.2.1" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/assets/home.html" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:38:08 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/bootstrap"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 305ms (Views: 303.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:38:08 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/font-awesome"}
+  Rendered application/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 89ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:38:08 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/prettyPhoto"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 75ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/animate" for ::1 at 2015-09-15 15:38:08 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/animate"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 89ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/main" for ::1 at 2015-09-15 15:38:08 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/main"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 81ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/portfolio/recent/item1.png" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/assets/images/slider/bg3.jpg" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/assets/images/slider/bg1.jpg" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/assets/images/slider/bg2.jpg" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item3.png" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item2.png" for ::1 at 2015-09-15 15:38:08 +0200
+
+
+Started GET "/" for ::1 at 2015-09-15 15:39:57 +0200
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-3b980a22cc7f1242cdc4eb4dc9fbdd7912920de0fac9d556369c02f85d2db918.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/application.self-db15de60cb1f0a6d37563715ba37e4c447ad1d3dce8ef15121df06d8c7dbac97.css?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/angular/angular.self-05cb83d5435bbe02c7b75c2b3975cc6a09346a72503c35931fca161177c6d8bd.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/angular-animate/angular-animate.self-aa58ee4ac692876e0798ee2af177a0190826aca24de054d1de7d8da972b42a27.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-e6764caa085b2bbaaf74c1afbb77982d52f0e95f15b5e06c8606fa762d42f75c.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/angular-bootstrap/ui-bootstrap-tpls.self-cd3eb791825fc3d9cff7b1178d834a50cc4393ee4851a3c087428666dcccb810.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/bootstrap.min.self-1b2106e2c41fcb513369ff599bd566501e08088288b914c2af8ef2e5c9acd29d.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/jquery.isotope.min.self-e6d494265154578881e7379b7199ac5d79c4c2cd3780cef2f559c2e97e075703.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/jquery.prettyPhoto.self-6aa4a750d3d56d3e01be3f11ba7ca78d76c80937f72f96d1557338f31b942a7a.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/html5shiv.self-1f432d487ed3790f765994dd831280ac2373eb894c0c2cec7b1fc3372f1ac6db.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/main.self-97fd48a54e4e83dd5216b7b405a318828b9d049460498adbbbf8b18f8e50a1cf.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/ng-app/app.self-46577727230b9d9d11fb71636f0a904b134697e4d89e3c4b571f5016e858cfe5.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/ng-app/css/animate" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/ng-app/css/main" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/ng-app/controllers/home.self-8c42b2cc8616697b2eb7174407ca1e5d37a226a9ca77ca6bcf09d8c15534c979.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/respond.min.self-ce6956f02c4ea8da8c7946401a8c7eeae9f685c7375faf62e00be01a31aac68f.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/images/logo.png" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/images/blog/thumb1.jpg" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/images/blog/thumb2.jpg" for ::1 at 2015-09-15 15:39:57 +0200
+
+
+Started GET "/assets/images/blog/thumb3.jpg" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/angular/angular.self-05cb83d5435bbe02c7b75c2b3975cc6a09346a72503c35931fca161177c6d8bd.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/angular-bootstrap/ui-bootstrap-tpls.self-cd3eb791825fc3d9cff7b1178d834a50cc4393ee4851a3c087428666dcccb810.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/bootstrap.min.self-1b2106e2c41fcb513369ff599bd566501e08088288b914c2af8ef2e5c9acd29d.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/html5shiv.self-1f432d487ed3790f765994dd831280ac2373eb894c0c2cec7b1fc3372f1ac6db.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/jquery.isotope.min.self-e6d494265154578881e7379b7199ac5d79c4c2cd3780cef2f559c2e97e075703.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/jquery.prettyPhoto.self-6aa4a750d3d56d3e01be3f11ba7ca78d76c80937f72f96d1557338f31b942a7a.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/main.self-97fd48a54e4e83dd5216b7b405a318828b9d049460498adbbbf8b18f8e50a1cf.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/ng-app/app.self-46577727230b9d9d11fb71636f0a904b134697e4d89e3c4b571f5016e858cfe5.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/ng-app/controllers/home.self-8c42b2cc8616697b2eb7174407ca1e5d37a226a9ca77ca6bcf09d8c15534c979.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/respond.min.self-ce6956f02c4ea8da8c7946401a8c7eeae9f685c7375faf62e00be01a31aac68f.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/application.self-db15de60cb1f0a6d37563715ba37e4c447ad1d3dce8ef15121df06d8c7dbac97.css?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:39:58 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/prettyPhoto"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/animate" for ::1 at 2015-09-15 15:39:58 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/animate"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 181ms (Views: 180.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:39:58 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/font-awesome"}
+  Rendered application/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/main" for ::1 at 2015-09-15 15:39:58 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/main"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:39:58 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/bootstrap"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-app/fonts/fontawesome-webfont.woff?v=3.2.1" for ::1 at 2015-09-15 15:39:58 +0200
+
+
+Started GET "/assets/home.html" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/logo.png" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/blog/thumb3.jpg" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/blog/thumb1.jpg" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/blog/thumb2.jpg" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/slider/bg1.jpg" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/slider/bg2.jpg" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/slider/bg3.jpg" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item3.png" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item1.png" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item2.png" for ::1 at 2015-09-15 15:39:59 +0200
+
+
+Started GET "/ng-app/css/animate" for ::1 at 2015-09-15 15:40:02 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/animate"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 230ms (Views: 229.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 15:40:03 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/bootstrap"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 15:40:03 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/font-awesome"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 71ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/main" for ::1 at 2015-09-15 15:40:03 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/main"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 15:40:03 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/prettyPhoto"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about-us.html" for ::1 at 2015-09-15 15:40:13 +0200
+
+
+Started GET "/assets/images/team-member.jpg" for ::1 at 2015-09-15 15:40:13 +0200
+
+
+Started GET "/" for ::1 at 2015-09-15 16:01:05 +0200
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1140ms (Views: 1121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-app/controllers/blog.self-adcefa62e99968139554c9c10efa438bae6370dd103dbce68471b058a87f6609.js?body=1" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/ng-app/app.self-60a72882347cee2f5ec5d464c94c99e1774e759d137ee1edb4c1ca8c13f6ae7a.js?body=1" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/ng-app/css/animate" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/ng-app/css/main" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/images/logo.png" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/images/blog/thumb1.jpg" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/images/blog/thumb2.jpg" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/images/blog/thumb3.jpg" for ::1 at 2015-09-15 16:01:06 +0200
+
+
+Started GET "/assets/ng-app/fonts/fontawesome-webfont.woff?v=3.2.1" for ::1 at 2015-09-15 16:01:07 +0200
+
+
+Started GET "/assets/home.html" for ::1 at 2015-09-15 16:01:07 +0200
+
+
+Started GET "/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 16:01:07 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/bootstrap"}
+  Rendered application/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 293ms (Views: 291.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/animate" for ::1 at 2015-09-15 16:01:07 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/animate"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 133ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 16:01:07 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/prettyPhoto"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 157ms (Views: 156.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 16:01:07 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/font-awesome"}
+  Rendered application/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 138ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/main" for ::1 at 2015-09-15 16:01:08 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/main"}
+  Rendered application/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 259ms (Views: 257.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/portfolio/recent/item1.png" for ::1 at 2015-09-15 16:01:08 +0200
+
+
+Started GET "/assets/images/slider/bg2.jpg" for ::1 at 2015-09-15 16:01:08 +0200
+
+
+Started GET "/assets/images/slider/bg3.jpg" for ::1 at 2015-09-15 16:01:08 +0200
+
+
+Started GET "/assets/images/slider/bg1.jpg" for ::1 at 2015-09-15 16:01:08 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item3.png" for ::1 at 2015-09-15 16:01:08 +0200
+
+
+Started GET "/assets/images/portfolio/recent/item2.png" for ::1 at 2015-09-15 16:01:08 +0200
+
+
+Started GET "/assets/blog.html" for ::1 at 2015-09-15 16:01:11 +0200
+
+
+Started GET "/assets/images/ads/ad1.png" for ::1 at 2015-09-15 16:01:11 +0200
+
+
+Started GET "/assets/images/ads/ad3.png" for ::1 at 2015-09-15 16:01:11 +0200
+
+
+Started GET "/assets/images/ads/ad2.png" for ::1 at 2015-09-15 16:01:11 +0200
+
+
+Started GET "/assets/images/ads/ad4.png" for ::1 at 2015-09-15 16:01:11 +0200
+
+
+Started GET "/assets/images/blog/blog2.jpg" for ::1 at 2015-09-15 16:01:11 +0200
+
+
+Started GET "/assets/images/blog/blog1.jpg" for ::1 at 2015-09-15 16:01:11 +0200
+
+
+Started GET "/ng-app/css/animate" for ::1 at 2015-09-15 16:01:13 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/animate"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 196ms (Views: 195.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 16:01:13 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/bootstrap"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 230ms (Views: 229.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 16:01:13 +0200
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"ng-app/css/font-awesome"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/main" for ::1 at 2015-09-15 16:01:13 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/main"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 64ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 16:01:13 +0200
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"ng-app/css/prettyPhoto"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-app/css/animate" for ::1 at 2015-09-15 16:01:14 +0200
+
+
+Started GET "/assets/ng-app/css/bootstrap.min" for ::1 at 2015-09-15 16:01:14 +0200
+
+
+Started GET "/assets/ng-app/css/font-awesome.min" for ::1 at 2015-09-15 16:01:14 +0200
+
+
+Started GET "/assets/ng-app/css/prettyPhoto" for ::1 at 2015-09-15 16:01:14 +0200
+
+
+Started GET "/assets/ng-app/css/main" for ::1 at 2015-09-15 16:01:14 +0200
+  [1m[36m (22.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (31.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateServices (20150915164227)
+  [1m[35m (19.5ms)[0m  CREATE TABLE `services` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `duetime` varchar(255), `datetime` date, `type` int(11), `abstract` text, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150915164227')
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMembers (20150915164419)
+  [1m[35m (19.3ms)[0m  CREATE TABLE `members` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `function` int(11), `promotion` int(11), `abstract` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150915164419')
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePosts (20150915164737)
+  [1m[35m (17.0ms)[0m  CREATE TABLE `posts` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `abstract` text, `body` text, `author` varchar(255), `upvotes` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150915164737')
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150915164913)
+  [1m[35m (18.2ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `body` text, `author` varchar(255), `post_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_comments_on_post_id`  (`post_id`) ) ENGINE=InnoDB
+  [1m[36m (23.8ms)[0m  [1mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_2fd19c0db7`
+FOREIGN KEY (`post_id`)
+  REFERENCES `posts` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150915164913')[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (1.7ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'website'
+  AND fk.table_name = 'comments'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'website'
+  AND fk.table_name = 'members'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `members`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'website'
+  AND fk.table_name = 'posts'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `posts`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'website'
+  AND fk.table_name = 'services'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `services`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (4.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateServices (20150915193019)
+  [1m[35m (3.5ms)[0m  CREATE TABLE `services` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `duetime` date, `type` int(11), `abstract` text, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'services' already exists: CREATE TABLE `services` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `duetime` date, `type` int(11), `abstract` text, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateServices (20150915193019)
+  [1m[35m (0.4ms)[0m  CREATE TABLE `services` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `duetime` date, `type` int(11), `abstract` text, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'services' already exists: CREATE TABLE `services` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `duetime` date, `type` int(11), `abstract` text, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateServices (20150915193019)
+  [1m[35m (29.9ms)[0m  CREATE TABLE `services` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `duetime` date, `type` int(11), `abstract` text, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150915193019')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'website'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'website'
+  AND fk.table_name = 'members'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `members`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'website'
+  AND fk.table_name = 'posts'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `posts`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'website'
+  AND fk.table_name = 'services'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `services`
