@@ -27,7 +27,12 @@ angular
                 .state('blog', {
                     url: '/blog',
                     templateUrl: '../assets/blog.html',
-                    controller: 'blogCtrl'
+                    controller: 'blogCtrl',
+                    /*resolve: {
+                        postPromise: ['posts', function(posts){
+                            return posts.getAll();
+                        }]
+                        }*/
                 })
                 .state('contact', {
                     url: '/contact',

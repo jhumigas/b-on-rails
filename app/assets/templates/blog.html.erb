@@ -109,6 +109,30 @@
                         <a class="btn btn-default" href="blog-item.html">Read More <i class="icon-angle-right"></i></a>
                     </div>
                 </div><!--/.blog-item-->
+                <div>
+                    <h3>Create a Post</h3>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Title" ng-model="title">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Name" ng-model="author">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Abstract" ng-model="abstract">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <textarea rows="8" class="form-control" placeholder="body" ng-model="body"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-lg">Submit Post</button>
+                    </form>
+                </div><!--/#comment-form-->
                 <ul class="pagination pagination-lg">
                     <li><a href="#"><i class="icon-angle-left"></i></a></li>
                     <li class="active"><a href="#">1</a></li>

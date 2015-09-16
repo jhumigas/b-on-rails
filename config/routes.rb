@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-root 'application#index'
-get '*path' => 'application#index'
 # Routes for the app functions 
 resources :posts, only: [:create, :index, :show, :edit, :update, :destroy] do
     resources :comments, only: [:show, :create, :destroy] do
@@ -15,6 +13,10 @@ resources :posts, only: [:create, :index, :show, :edit, :update, :destroy] do
     end
   end
 resources :members, :services
+#configuration for ui-router
+#these routes have to be after all the others
+root 'application#index'
+get '*path' => 'application#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
