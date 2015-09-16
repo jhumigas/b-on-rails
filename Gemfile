@@ -4,6 +4,8 @@ gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'mysql2', '~> 0.3.18'
 gem 'responders', '~> 2.0'
+#to support csrf token
+gem 'angular_rails_csrf'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'

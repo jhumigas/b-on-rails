@@ -15,7 +15,8 @@ angular
 		return o;
 	}
 	])
-	.controller('blogCtrl',['posts',function($scope,posts){
+	.controller('blogCtrl',['$scope','posts',function($scope,posts){
+		$scope.posts= posts.posts;
 			$scope.addPost = function(){
 				if(!$scope.title || $scope.title === '') { return; }
 					posts.create({
@@ -28,8 +29,5 @@ angular
 				$scope.abstract = '';
 				$scope.body ='';
 				$scope.author ='';
-				};
-		
-
-		
+				};		
 	}]);

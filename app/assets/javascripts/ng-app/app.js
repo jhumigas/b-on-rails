@@ -28,11 +28,11 @@ angular
                     url: '/blog',
                     templateUrl: '../assets/blog.html',
                     controller: 'blogCtrl',
-                    /*resolve: {
+                    resolve: {
                         postPromise: ['posts', function(posts){
                             return posts.getAll();
                         }]
-                        }*/
+                        }
                 })
                 .state('contact', {
                     url: '/contact',
