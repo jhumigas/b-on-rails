@@ -7,8 +7,8 @@ angular
 				angular.copy(data,m.members);
 			});
 		};
-		m.create = function(post){
-			return $http.post('/members.json').success(function(data){
+		m.create = function(member){
+			return $http.post('/members.json', member).success(function(data){
 				m.members.push(data);
 			});
 		};
@@ -17,12 +17,12 @@ angular
 	.controller('memberCtrl',['$scope','members',function($scope,members){
 		$scope.members = members.members;
 		$scope.addMember = function(){
-				if(!$scope.title || $scope.title === '') { return; }
+				if(!$scope.name || $scope.name === '') { return; }
 					members.create({
 					name: $scope.name,
 					position: $scope.position,
 					promotion: $scope.promotion,
-					abstract:$scope.abstract,
+					abstract: $scope.abstract,
 				});
 				$scope.name = '';
 				$scope.position = '';

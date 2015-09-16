@@ -97,10 +97,10 @@
         </aside>        
         <div class="col-sm-8 col-sm-pull-4">
             <div class="blog">
-                <div class="blog-item"  ng-repeat="post in posts">
+                <div class="blog-item"  ng-repeat="post in posts track by $index">
                     <img class="img-responsive img-blog" src="../assets/images/blog/blog1.jpg" width="100%" alt="" />
                     <div class="blog-content">
-                        <a href="blog-item.html"><h3>{{post.title}}</h3></a>
+                        <h3>{{post.title}}</h3>
                         <div class="entry-meta">
                             <span><i class="icon-user"></i>{{post.author}}</span>
                             <span><i class="icon-calendar"></i> {{post.created_at|date:'mediumDate'}}</span>
@@ -108,7 +108,7 @@
                             <span><i class="icon-comment"></i> <a href="blog-item.html#comments">{{post.comments.length}} Comments</a></span>
                         </div>
                         <p>{{post.abstract}}</p>
-                        <a class="btn btn-default" href="blog-item.html">Read More <i class="icon-angle-right"></i></a>
+                        <a class="btn btn-default" ui-sref="blogItem({post: post})">Read More <i class="icon-angle-right"></i></a>
                     </div>
                 </div><!--/.blog-item-->
                 <div>

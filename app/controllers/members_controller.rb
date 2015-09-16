@@ -6,7 +6,7 @@ class MembersController < ApplicationController
 		respond_with Member.find(params[:id])
 	end
 	def create
-		respond_with Member.create(post_params)
+		respond_with Member.create(member_params)
 	end
 	def update
 		respond_with Member.update(params[:id], params[:member])

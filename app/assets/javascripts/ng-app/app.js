@@ -63,14 +63,12 @@ angular
                     templateUrl: '../assets/career.html',
                 })
                 .state('blogItem', {
-                    url: '/blogItem',
+                    url: '/post',
+                    params:{
+                        post: null,
+                    },
                     templateUrl: '../assets/blog-item.html',
-                    controller:'blogCtrl',
-                    resolve: {
-                        postPromise: ['posts', function(posts){
-                            return posts.getAll();
-                        }]
-                        }
+                    controller: 'blogItemCtrl'
                 });
                 
                 
