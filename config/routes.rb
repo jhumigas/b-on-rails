@@ -12,7 +12,8 @@ resources :posts, only: [:create, :index, :show, :edit, :update, :destroy] do
       put '/upvote' => 'posts#upvote'
     end
   end
-resources :members, :services
+resources :members, only:[:create, :index, :show, :update, :destroy]
+resources :services, only:[:create, :index, :show, :update, :destroy]
 #configuration for ui-router
 #these routes have to be after all the others
 root 'application#index'

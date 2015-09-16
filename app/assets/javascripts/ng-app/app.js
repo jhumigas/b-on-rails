@@ -15,10 +15,22 @@ angular
                 .state('about', {
                     url: '/about',
                     templateUrl: '../assets/about-us.html',
+                    controller: 'memberCtrl',
+                    resolve: {
+                        memberPromise : ['members',function(members){
+                            return members.getAll();
+                        }]    
+                    }
                 })
                 .state('services', {
                     url: '/services',
                     templateUrl: '../assets/services.html',
+                    controller:'serviceCtrl',
+                    resolve: {
+                        servicePromise :['services',function(services){
+                            return services.getAll();
+                        }]
+                    }
                 })
                 .state('portofolio', {
                     url: '/portofolio',
@@ -53,6 +65,12 @@ angular
                 .state('blogItem', {
                     url: '/blogItem',
                     templateUrl: '../assets/blog-item.html',
+                    controller:'blogCtrl',
+                    resolve: {
+                        postPromise: ['posts', function(posts){
+                            return posts.getAll();
+                        }]
+                        }
                 });
                 
                 

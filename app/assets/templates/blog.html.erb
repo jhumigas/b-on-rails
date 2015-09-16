@@ -102,9 +102,9 @@
                     <div class="blog-content">
                         <a href="blog-item.html"><h3>{{post.title}}</h3></a>
                         <div class="entry-meta">
-                            <span><i class="icon-user"></i> <a href="#">{{post.author}}</a></span>
-                            <span><i class="icon-folder-close"></i> <a href="#"></a> Article</span>
+                            <span><i class="icon-user"></i>{{post.author}}</span>
                             <span><i class="icon-calendar"></i> {{post.created_at|date:'mediumDate'}}</span>
+                            <span><i class="icon-thumbs-up"></i> {{post.upvotes}}</span>
                             <span><i class="icon-comment"></i> <a href="blog-item.html#comments">{{post.comments.length}} Comments</a></span>
                         </div>
                         <p>{{post.abstract}}</p>

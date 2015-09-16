@@ -2,14 +2,14 @@
 
 one:
   title: MyString
-  duetime: 2015-09-15
-  type: 1
+  duetime: 2015-09-16
+  typeService: 1
   abstract: MyText
   description: MyText
 
 two:
   title: MyString
-  duetime: 2015-09-15
-  type: 1
+  duetime: 2015-09-16
+  typeService: 1
   abstract: MyText
   description: MyText

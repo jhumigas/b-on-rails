@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  function: 1
+  position: MyString
   promotion: 1
   abstract: MyText
 
 two:
   name: MyString
-  function: 1
+  position: MyString
   promotion: 1
   abstract: MyText

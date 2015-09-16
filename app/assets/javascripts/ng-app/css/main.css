@@ -249,6 +249,8 @@ body > section {
 }
 .emerald {
   background-color: #2ecc71;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .nephritis {
   background-color: #27ae60;
@@ -1086,4 +1088,7 @@ ul.faq li > div h3 {
   text-align: center;
   margin-top: 150px;
   margin-bottom: 150px;
+}
+section.container{
+  padding-top:30px;
 }
