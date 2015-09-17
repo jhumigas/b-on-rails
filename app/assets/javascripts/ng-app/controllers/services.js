@@ -8,8 +8,13 @@ angular
 			});	
 		};
 		t.create = function(service){
-			return $http.post('/services.json', service).success(function(data){
+			return $http.post('/services.json',service).success(function(data){
 				t.services.push(data);
+			});
+		};
+		t.delete = function(id){
+			return $http.delete('/services/'+id+'.json').success(function(){
+				t.getAll();
 			});
 		};
 		return t;
@@ -20,15 +25,15 @@ angular
 				if(!$scope.title || $scope.title === '') { return; }
 					services.create({
 					title: $scope.title,
-					duetime: $scope.duetime,
 					typeService: $scope.typeService,
-					abstract:$scope.abstract,
 					description:$scope.description
 				});
 				$scope.title = '';
-				$scope.abstract = '';
-				$scope.body ='';
-				$scope.author ='';
+				$scope.typeService ='';
+				$scope.description ='';
 				};
+	    $scope.deleteService = function(service){
+			services.delete(service.id);
+		};		
 		
 	}]);

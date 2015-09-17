@@ -7,7 +7,7 @@ class ServicesController < ApplicationController
 		respond_with Service.find(params[:id])
 	end
 	def create
-		respond_with Service.create(post_params)
+		respond_with Service.create(service_params)
 	end
 	def update
 		respond_with Service.update(params[:id], params[:service])
@@ -17,6 +17,6 @@ class ServicesController < ApplicationController
 	end
 	private
 	def service_params
-		params.require(:service).permit(:title,:duetime,:typeService,:abstract,:description)
+		params.require(:service).permit(:title,:typeService,:description)
 	end
 end
