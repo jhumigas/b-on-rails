@@ -102,13 +102,13 @@
                     <div class="blog-content">
                         <h3>{{post.title}}</h3>
                         <div class="entry-meta">
-                            <span><i class="icon-user"></i>{{post.author}}</span>
+                            <span><i class="icon-user"></i> {{post.author}}</span>
                             <span><i class="icon-calendar"></i> {{post.created_at|date:'mediumDate'}}</span>
                             <span><i class="icon-thumbs-up"></i> {{post.upvotes}}</span>
                             <span><i class="icon-comment"></i> <a href="blog-item.html#comments">{{post.comments.length}} Comments</a></span>
                         </div>
                         <p>{{post.abstract}}</p>
-                        <a class="btn btn-default" ui-sref="blogItem({post: post})">Read More <i class="icon-angle-right"></i></a>
+                        <a class="btn btn-default" ui-sref="blogItem({post:post})">Read More <i class="icon-angle-right"></i></a>
                     </div>
                 </div><!--/.blog-item-->
                 <div>
@@ -148,3 +148,4 @@
         </div><!--/.col-md-8-->
     </div><!--/.row-->
 </section><!--/#blog-->
+<ui-view></ui-view>

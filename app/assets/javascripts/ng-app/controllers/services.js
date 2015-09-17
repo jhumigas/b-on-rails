@@ -7,8 +7,8 @@ angular
 				angular.copy(data,t.services);
 			});	
 		};
-		t.create = function(post){
-			return $http.post('/services.json').success(function(data){
+		t.create = function(service){
+			return $http.post('/services.json', service).success(function(data){
 				t.services.push(data);
 			});
 		};

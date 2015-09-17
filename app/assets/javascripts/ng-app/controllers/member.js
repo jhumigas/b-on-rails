@@ -8,8 +8,14 @@ angular
 			});
 		};
 		m.create = function(member){
-			return $http.post('/members.json', member).success(function(data){
+			return $http.post('/members.json',member).success(function(data){
 				m.members.push(data);
+			});
+		};
+		m.delete = function(id){
+			return $http.delete('/members/'+id+'.json').success(function(data){
+				m.getAll();
+				return data;
 			});
 		};
 		return m;
@@ -29,5 +35,8 @@ angular
 				$scope.promotion= 0;
 				$scope.abstract ='';
 				};
+		$scope.deleteMember= function(member){
+			members.delete(member.id);
+		};
 		
 	}]);

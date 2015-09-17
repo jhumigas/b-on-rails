@@ -5,7 +5,9 @@ class CommentsController < ApplicationController
 		respond_with post,comment
 	end
 	def destroy
-	 	respond_with Comment.destroy(params[:id])
+		post= Post.find(params[:post_id])
+		comment=post.comments.destroy(params[:id])
+		respond_with post,comment
 	end
 	private
 	def comment_params

@@ -25,10 +25,13 @@ angular
 			o.addComment = function(id,comment){
 				return $http.post('/posts/'+id+'/comments.json',comment);
 			};
+			o.deleteComment = function(id,idcomment){
+				return $http.delete('/posts/'+id+'/comments/'+idcomment+'.json');
+				};
 		return o;
 	}
 	])
-	.controller('blogCtrl',['$scope','posts',function($scope,posts,post){
+	.controller('blogCtrl',['$scope','posts','$state',function($scope,posts,$state,post){
 		$scope.posts= posts.posts;
 		$scope.addPost = function(){
 			if(!$scope.title || $scope.title === '') { return; }
@@ -43,5 +46,5 @@ angular
 			$scope.body ='';
 			$scope.author ='';
 			};	
-			
+						
 	}]);

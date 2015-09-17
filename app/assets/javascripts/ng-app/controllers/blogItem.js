@@ -16,4 +16,9 @@ angular
 			$scope.body = '';
 			$scope.author_comment ='';
 			};
+		$scope.deleteComment = function(comment,post,index){
+			posts.deleteComment(post.id,comment.id).success(function(){
+				$scope.post.comments.splice(index,1);
+			});
+		};
 	}]);
