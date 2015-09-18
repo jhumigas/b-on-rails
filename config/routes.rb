@@ -14,6 +14,7 @@ resources :posts, only: [:create, :index, :show, :edit, :update, :destroy] do
   end
 resources :members, only:[:create, :index, :show, :update, :destroy]
 resources :services, only:[:create, :index, :show, :update, :destroy]
+resources :portofolios, only:[:create, :index, :show, :destroy]
 #configuration for ui-router
 #these routes have to be after all the others
 root 'application#index'

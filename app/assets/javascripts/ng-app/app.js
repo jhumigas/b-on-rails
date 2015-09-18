@@ -35,6 +35,7 @@ angular
                 .state('portofolio', {
                     url: '/portofolio',
                     templateUrl: '../assets/portofolio.html',
+                    controller:'portofolioCtrl'
                 })
                 .state('blog', {
                     url: '/blog',
