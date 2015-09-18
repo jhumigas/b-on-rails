@@ -20,7 +20,7 @@
             <div class="widget search">
                 <form role="form">
                     <div class="input-group">
-                        <input type="text" class="form-control" autocomplete="off" placeholder="Search">
+                        <input type="text" class="form-control" autocomplete="off" placeholder="Search" ng-model="searchText.title">
                         <span class="input-group-btn">
                             <button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
                         </span>
@@ -97,7 +97,7 @@
         </aside>        
         <div class="col-sm-8 col-sm-pull-4">
             <div class="blog">
-                <div class="blog-item"  ng-repeat="post in posts track by $index">
+                <div class="blog-item"  ng-repeat="post in posts| filter: searchText">
                     <img class="img-responsive img-blog" src="../assets/images/blog/blog1.jpg" width="100%" alt="" />
                     <div class="blog-content">
                         <h3>{{post.title}}</h3>

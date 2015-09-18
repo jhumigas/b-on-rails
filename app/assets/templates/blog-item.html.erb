@@ -88,7 +88,8 @@
                         <div class="entry-meta">
                             <span><i class="icon-user"></i> <a href="#">{{post.author}}</a></span>
                             <span><i class="icon-calendar"></i>  {{post.created_at|date:'mediumDate'}}</span>
-                            <span><i class="icon-comment"></i> <a href="blog-item.html#comments">{{post.comments.length}} Comments</a></span>
+                            <span ng-click="incrementUpvotes(post)"><a><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
+                            <span><i class="icon-comment"></i> {{post.comments.length}}</span>       
                         </div>
                         <p class="lead">{{post.abstract}}</p>
 
@@ -167,11 +168,8 @@
                                 <h3>Leave a comment</h3>
                                 <form class="form-horizontal" role="form">
                                     <div class="form-group">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-12">
                                             <input type="text" class="form-control" placeholder="Name" ng-model="comment_author">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="email" class="form-control" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="form-group">
