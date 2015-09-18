@@ -105,7 +105,7 @@
                             <span><i class="icon-user"></i> {{post.author}}</span>
                             <span><i class="icon-calendar"></i> {{post.created_at|date:'mediumDate'}}</span>
                             <span><i class="icon-thumbs-up"></i> {{post.upvotes}}</span>
-                            <span><i class="icon-comment"></i> <a href="blog-item.html#comments">{{post.comments.length}} Comments</a></span>
+                            <span><i class="icon-comment"></i> {{post.comments.length}}</span>
                         </div>
                         <p>{{post.abstract}}</p>
                         <a class="btn btn-default" ui-sref="blogItem({post:post})">Read More <i class="icon-angle-right"></i></a>

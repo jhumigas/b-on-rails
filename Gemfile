@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 #added 
 gem 'bower-rails'
 gem 'angular-rails-templates'
+gem 'font-awesome-rails'
 gem 'mysql2', '~> 0.3.18'
 gem 'responders', '~> 2.0'
 #to support csrf token
