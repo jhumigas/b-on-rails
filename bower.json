@@ -15,7 +15,9 @@
           "angular-animate": "latest",
           "bootstrap-sass-official": "latest",
           "bootstrap": "~3.3.2",
-          "angular-bootstrap": "~0.12.1"
+          "angular-bootstrap": "~0.12.1",
+          "ng-file-upload": "latest",
+          "ng-file-upload-shim": "latest"
     }
   }
 }

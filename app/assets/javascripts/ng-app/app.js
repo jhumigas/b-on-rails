@@ -3,7 +3,8 @@ angular
         'ngAnimate',
         'ui.router',
     //    'ui.bootstrap',
-        'templates'
+        'templates',
+        'ngFileUpload'
     ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             $stateProvider

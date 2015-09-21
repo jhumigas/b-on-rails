@@ -3,8 +3,8 @@ angular
 	.factory('portofolios',['$http',function($http){
 		var o = {portofolios:[]};
 		o.create = function(portofolio){
-			return $http.post('/portofolios.json',portofolio).success(function(){
-				console.log('test');
+			return $http.post('/portofolios.json',portofolio).success(function(data){
+				return data;
 			});
 		};
 		return o;
