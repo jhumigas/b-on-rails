@@ -10,12 +10,12 @@ angular
 		return o;
 		
 	}])
-	.controller('portofolioCtrl',['$scope','portofolios',function($scope,portofolios){
+	.controller('portofolioCtrl',['$scope','Upload','portofolios',function($scope,Upload,portofolios){
 		$scope.addPortofolio = function(){
 			if(!$scope.title || $scope.title ===''){return;}
 			portofolios.create({
 				title: $scope.title,
-				image: $scope.image
+				image: $scope.file
 			});
 		};
 	}]);
