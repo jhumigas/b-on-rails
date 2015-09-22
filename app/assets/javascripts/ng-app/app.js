@@ -8,14 +8,21 @@ angular
     ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             $stateProvider
+                .state('layout',{
+                    url: '',
+                    templateUrl: '../assets/layout.html',
+                    abstract:true,
+                })
                 .state('home', {
                     url: '/',
                     templateUrl: '../assets/home.html',
+                    parent: 'layout',
                     controller: 'HomeCtrl'
                 })
                 .state('about', {
                     url: '/about',
                     templateUrl: '../assets/about-us.html',
+                    parent: 'layout',
                     controller: 'memberCtrl',
                     resolve: {
                         memberPromise : ['members',function(members){
@@ -26,6 +33,7 @@ angular
                 .state('services', {
                     url: '/services',
                     templateUrl: '../assets/services.html',
+                    parent: 'layout',
                     controller:'serviceCtrl',
                     resolve: {
                         servicePromise :['services',function(services){
@@ -36,11 +44,13 @@ angular
                 .state('portofolio', {
                     url: '/portofolio',
                     templateUrl: '../assets/portofolio.html',
+                    parent: 'layout',
                     controller:'portofolioCtrl'
                 })
                 .state('blog', {
                     url: '/blog',
                     templateUrl: '../assets/blog.html',
+                    parent: 'layout',
                     controller: 'blogCtrl',
                     resolve: {
                         postPromise: ['posts', function(posts){
@@ -50,23 +60,28 @@ angular
                 })
                 .state('contact', {
                     url: '/contact',
+                    parent: 'layout',
                     templateUrl: '../assets/contact-us.html',
                 })
                 .state('faq', {
                     url: '/faq',
+                    parent: 'layout',
                     templateUrl: '../assets/faq.html',
                 })
                 .state('terms', {
                     url: '/terms',
+                    parent: 'layout',
                     templateUrl: '../assets/terms.html',
                 })
                 .state('career', {
                     url: '/career',
+                    parent: 'layout',
                     templateUrl: '../assets/career.html',
                 })
                 .state('blogItem', {
                     url: '/blogItem',
                     templateUrl: '../assets/blog-item.html',
+                    parent:'layout',
                     controller: 'blogItemCtrl',
                     params : {
                         post : null,
