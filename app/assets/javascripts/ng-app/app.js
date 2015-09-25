@@ -4,7 +4,8 @@ angular
         'ui.router',
     //    'ui.bootstrap',
         'templates',
-        'ngFileUpload'
+        'ngFileUpload',
+        'Devise'
     ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             $stateProvider
@@ -12,6 +13,18 @@ angular
                     url: '',
                     templateUrl: '../assets/layout.html',
                     abstract:true,
+                    controller: 'LayoutCtrl'
+                })
+                .state('register',{
+                    urm: '/register',
+                    templateUrl: '../assets/registration.html',
+                    parent: 'layout',
+                    controller: 'AuthCtrl',
+                    /*onEnter: ['$state', 'Auth', function($state, Auth) {
+                        Auth.currentUser().then(function (){
+                        $state.go('home');
+                        });
+                    }]*/
                 })
                 .state('home', {
                     url: '/',

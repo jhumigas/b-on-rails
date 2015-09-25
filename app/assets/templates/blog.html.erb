@@ -111,7 +111,7 @@
                         <a class="btn btn-default" ui-sref="blogItem({post:post})">Read More <i class="icon-angle-right"></i></a>
                     </div>
                 </div><!--/.blog-item-->
-                <div>
+                <div ng-show="signedIn()">
                     <h3>Create a Post</h3>
                     <form class="form-horizontal" role="form">
                         <div class="form-group">

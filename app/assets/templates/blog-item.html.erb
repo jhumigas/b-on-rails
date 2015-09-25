@@ -88,7 +88,8 @@
                         <div class="entry-meta">
                             <span><i class="icon-user"></i> <a href="#">{{post.author}}</a></span>
                             <span><i class="icon-calendar"></i>  {{post.created_at|date:'mediumDate'}}</span>
-                            <span ng-click="incrementUpvotes(post)"><a><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
+                            <span ng-hide="signedIn()"><a><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
+                            <span ng-show="signedIn() "ng-click="incrementUpvotes(post)"><a><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
                             <span><i class="icon-comment"></i> {{post.comments.length}}</span>       
                         </div>
                         <p class="lead">{{post.abstract}}</p>
@@ -164,7 +165,7 @@
                                 </div><!--/.media-->
                             </div><!--/#comments-list-->  
 
-                            <div id="comment-form">
+                            <div id="comment-form" ng-show="signedIn()">
                                 <h3>Leave a comment</h3>
                                 <form class="form-horizontal" role="form">
                                     <div class="form-group">

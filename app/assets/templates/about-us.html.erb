@@ -39,7 +39,7 @@ Africa Unite est une jeune association à but non lucratif d'intérêt général
                 <p><img class="img-responsive img-thumbnail img-circle" src="../assets/images/team-member.jpg" alt="" ></p>
                 <h5>{{member.name}}<small class="designation muted">{{member.position}}</small></h5>
                 <p>{{member.abstract}}</p>
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-danger" ng-click="deleteMember(member)"><i class="icon-remove"></i></a>
+                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a ng-show="signedIn()" class="btn btn-social btn-danger" ng-click="deleteMember(member)"><i class="icon-remove"></i></a>
             </div>
         </div>
 
@@ -68,7 +68,7 @@ Africa Unite est une jeune association à but non lucratif d'intérêt général
             </div>
         </div>
     </div><!--/#meet-the-team-->
-    <div id="member-form">
+    <div id="member-form" ng-show="signedIn()">
         <h3>Add a Member</h3>
         <form class="form-horizontal" role="form">
             <div class="form-group">
