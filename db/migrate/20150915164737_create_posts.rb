@@ -4,7 +4,6 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.text :abstract
       t.text :body
-      t.string :author
       t.integer :upvotes
 
       t.timestamps null: false
