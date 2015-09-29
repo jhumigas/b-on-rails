@@ -6,6 +6,7 @@ class PortofoliosController < ApplicationController
 		respond_with Portofolio.find(params[:id])
 	end
 	def create
+	    flash[:success] = "The photo was saved"
 		respond_with Portofolio.create(portofolio_params)
 	end
 	def update
