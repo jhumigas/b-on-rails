@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 		respond_with Post.find(params[:id])
 	end
 	def create
-		respond_with Post.create(post_params)
+		respond_with Post.create(post_params.merge(user_id: current_user.id))
 	end
 	def upvote
 		post= Post.find(params[:id])
@@ -17,6 +17,6 @@ class PostsController < ApplicationController
 
 	private
 	def post_params
-		params.require(:post).permit(:title,:abstract,:body,:author)
+		params.require(:post).permit(:title,:abstract,:body)
 	end
 end

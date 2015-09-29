@@ -9,12 +9,10 @@ angular
 			if($scope.body === '') { return; }
 			posts.addComment($scope.post.id, {
 				body: $scope.body,
-				author:$scope.comment_author,
 			}).success(function(comment) {
 				$scope.post.comments.push(comment);
 			});
 			$scope.body = '';
-			$scope.author_comment ='';
 			};
 		$scope.deleteComment = function(comment,post,index){
 			posts.deleteComment(post.id,comment.id).success(function(){

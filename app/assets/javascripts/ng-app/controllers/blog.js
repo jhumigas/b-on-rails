@@ -39,12 +39,10 @@ angular
 				title: $scope.title,
 				abstract: $scope.abstract,
 				body: $scope.body,
-				author:$scope.author,
 			});
 			$scope.title = '';
 			$scope.abstract = '';
 			$scope.body ='';
-			$scope.author ='';
 			};	
 						
 	}]);

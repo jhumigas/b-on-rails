@@ -11,17 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150925090316) do
+ActiveRecord::Schema.define(version: 20150929100242) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "body",       limit: 65535
-    t.string   "author",     limit: 255
     t.integer  "post_id",    limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.integer  "user_id",    limit: 4
   end
 
   add_index "comments", ["post_id"], name: "index_comments_on_post_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "members", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -46,11 +47,13 @@ ActiveRecord::Schema.define(version: 20150925090316) do
     t.string   "title",      limit: 255
     t.text     "abstract",   limit: 65535
     t.text     "body",       limit: 65535
-    t.string   "author",     limit: 255
     t.integer  "upvotes",    limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.integer  "user_id",    limit: 4
   end
+
+  add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
   create_table "services", force: :cascade do |t|
     t.string   "title",       limit: 255
@@ -81,4 +84,6 @@ ActiveRecord::Schema.define(version: 20150925090316) do
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
   add_foreign_key "comments", "posts"
+  add_foreign_key "comments", "users"
+  add_foreign_key "posts", "users"
 end
