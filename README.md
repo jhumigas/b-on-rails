@@ -3,7 +3,7 @@
 I'm *still* building this app for a students NGO. It's meant to be pretty basic, with blog-like features. The user can manage member, posts, and services.
 It is made to combine both AngularJS and Rails. The reliable tutorails I found on the net are:
 * [JCole Morrison's tutorial](http://start.jcolemorrison.com/angularjs-rails-4-1-and-ui-router-tutorial/)
-* [Thinkster's tutorail](https://thinkster.io/angular-rails/)
+* [Thinkster's tutorial](https://thinkster.io/angular-rails/)
 
 # Ruby on Rails 
 

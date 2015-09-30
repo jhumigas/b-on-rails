@@ -36,8 +36,8 @@ Africa Unite est une jeune association à but non lucratif d'intérêt général
     <div id="meet-the-team" class="row">
         <div class="col-md-3 col-xs-6" ng-repeat="member in members">
             <div class="center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="../assets/images/team-member.jpg" alt="" ></p>
-                <h5>{{member.name}}<small class="designation muted">{{member.position}}</small></h5>
+                <p><img class="img-responsive img-thumbnail img-circle" src="../assets/images/team-default.png" alt="" ></p>
+                <h5>{{member.name}}<small class="designation muted">{{member.position}} - CS{{member.promotion}}</small></h5>
                 <p>{{member.abstract}}</p>
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a ng-show="signedIn()" class="btn btn-social btn-danger" ng-click="deleteMember(member)"><i class="icon-remove"></i></a>
             </div>
@@ -45,28 +45,12 @@ Africa Unite est une jeune association à but non lucratif d'intérêt général
 
         <div class="col-md-3 col-xs-6">
             <div class="center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="../assets/images/team-member.jpg" alt="" ></p>
+                <p><img class="img-responsive img-thumbnail img-circle" src="../assets/images/team-default.png" alt="" ></p>
                 <h5>David J. Robbins<small class="designation muted">Senior Vice President</small></h5>
                 <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
             </div>
         </div>        
-        <div class="col-md-3 col-xs-6">
-            <div class="center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="../assets/images/team-member.jpg" alt="" ></p>
-                <h5>David J. Robbins<small class="designation muted">Senior Vice President</small></h5>
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>        
-        <div class="col-md-3 col-xs-6">
-            <div class="center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="../assets/images/team-member.jpg" alt="" ></p>
-                <h5>David J. Robbins<small class="designation muted">Senior Vice President</small></h5>
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
     </div><!--/#meet-the-team-->
     <div id="member-form" ng-show="signedIn()">
         <h3>Add a Member</h3>
