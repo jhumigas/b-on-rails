@@ -7,13 +7,13 @@ angular
 				return data;
 			});
 		};
-		o.createWithImage=function(title,file){
+		o.createWithImage=function(title,picFile){
 			Upload.upload({
 				url:'/portofolios.json',
 				method: 'POST',	
 				fields: {'portofolio[title]':title},
-				file: file,
-				fileFormDataName: 'portofolio[image]'
+				pic: picFile,
+				fileFormDataName: 'photo'
 			});
 		};
 		return o;
@@ -27,7 +27,7 @@ angular
 				image: $scope.file
 			});
 		};
-		$scope.uploadPicture = function(title,file){
-			portofolios.createWithImage(title,file);
+		$scope.uploadPicture = function(title,picFile){
+			portofolios.createWithImage(title,picFile);
 		};
 	}]);
