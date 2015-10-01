@@ -1,13 +1,17 @@
 source 'https://rubygems.org'
-#added 
+# added 
+# Managing components with bower
 gem 'bower-rails'
 gem 'angular-rails-templates'
+# To use font-awesome
 gem 'font-awesome-rails'
 gem 'mysql2', '~> 0.3.18'
 gem 'responders', '~> 2.0'
 #to support csrf token
 gem 'angular_rails_csrf'
-gem 'paperclip', '~> 4.3'
+# for files upload
+gem 'paperclip', '~> 4.2'
+# For authentification
 gem 'devise', '~> 3.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

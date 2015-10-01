@@ -90,11 +90,11 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-12">
-                    <input type="file" rows="8" class="form-control" ngf-select="" ng-model="filePic">
+                    <input type="file" rows="8" class="form-control" ngf-select="upload($files, $file, $event)" ng-model="filePic">
                     <img ngf-src="filePic" ngf-background="filePic" ngf-resize="{width: 20, height: 20, quality: 0.9}">
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger btn-lg" ng-click="uploadPicture(title,filePic)">Submit Picture</button>
+            <button type="submit" class="btn btn-danger btn-lg" ng-click="uploadPicture(title,filePic)">Submit Picture</button>      
         </form>
     </div><!--/#post-form-->
     <!-- -->

@@ -12,8 +12,8 @@ angular
 				url:'/portofolios.json',
 				method: 'POST',	
 				fields: {'portofolio[title]':title},
-				pic: picFile,
-				fileFormDataName: 'photo'
+				file: picFile,
+				fileFormDataName: 'portofolio[photo]'
 			});
 		};
 		return o;
@@ -28,6 +28,7 @@ angular
 			});
 		};
 		$scope.uploadPicture = function(title,picFile){
+			console.log(picFile);
 			portofolios.createWithImage(title,picFile);
 		};
 	}]);
