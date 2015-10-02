@@ -41,7 +41,9 @@ This application uses [carrierwave](https://github.com/carrierwaveuploader/carri
 The default storage directory is in /public/uploads/:model/:mountedas/:model.id.
 To change the directory, the store_dir method should be overridden in app/assets/uploader
 
-It is used for the picture uploading feature
+It is used for the picture uploading feature.
+
+Carrierwave uses [minimagick](https://github.com/minimagick/minimagick) to process some images i.e resizing large pictures. ImageMagick is required before!
 
 # Documentation 
 
