@@ -9,8 +9,11 @@ gem 'mysql2', '~> 0.3.18'
 gem 'responders', '~> 2.0'
 #to support csrf token
 gem 'angular_rails_csrf'
+# For Picture processing
+gem 'mini_magick'
 # for files upload
 gem 'carrierwave'
+
 # For authentification
 gem 'devise', '~> 3.4.0'
 
