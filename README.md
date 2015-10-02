@@ -30,7 +30,16 @@ ui.bootstrap is disabled for compatibility reasons.
 
 # Database
 
-This application uses MySQL with ActiveRecord
+This application uses MySQL with ActiveRecord.
+The gem mysql supplies with the adapter to the database. 
+
+#Storage Directory
+
+This application uses [carrierwave](https://github.com/carrierwaveuploader/carrierwave) for the uploading feature.
+The default storage directory is in /public/uploads/:model/:mountedas/:model.id.
+To change the directory, the store_dir method should be overridden in app/assets/uploader
+
+It is mostly used for the picture uploading feature
 
 # Documentation 
 
