@@ -36,7 +36,7 @@ Africa Unite est une jeune association à but non lucratif d'intérêt général
     <div id="meet-the-team" class="row">
         <div class="col-md-3 col-xs-6" ng-repeat="member in members">
             <div class="center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="../assets/images/team-default.png" alt="" ></p>
+                <p><img class="img-responsive img-thumbnail img-circle" ng-src="{{member.avatar.url == null ?'../assets/images/team-default.png':member.avatar.url}}" alt="" ></p>
                 <h5>{{member.name}}<small class="designation muted">{{member.position}} - CS{{member.promotion}}</small></h5>
                 <p>{{member.abstract}}</p>
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a ng-show="signedIn()" class="btn btn-social btn-danger" ng-click="deleteMember(member)"><i class="icon-remove"></i></a>
@@ -57,21 +57,27 @@ Africa Unite est une jeune association à but non lucratif d'intérêt général
         <form class="form-horizontal" role="form">
             <div class="form-group">
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" placeholder="Name" ng-model="name">
+                    <input type="text" class="form-control" placeholder="Name" ng-model="newMember.name">
                 </div>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" placeholder="position" ng-model="position">
+                    <input type="text" class="form-control" placeholder="position" ng-model="newMember.position">
                 </div>
                 <div class="col-sm-4">
-                    <input type="number" class="form-control" placeholder="promotion" ng-model="promotion">
+                    <input type="number" class="form-control" placeholder="promotion" ng-model="newMember.promotion">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-12">
-                    <textarea rows="8" class="form-control" placeholder="Abstract" ng-model="abstract"></textarea>
+                    <textarea rows="8" class="form-control" placeholder="Abstract" ng-model="newMember.abstract"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger btn-lg" ng-click="addMember()">Create Member</button>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="file" rows="8" class="form-control" ngf-select="upload($files, $file, $event)" ng-model="newMember.avatar">
+                    <img ngf-src="newMember.avatar" ngf-background="newMember.avatar" ngf-resize="{width: 20, height: 20, quality: 0.9}">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger btn-lg" ng-click="addMember(newMember)">Create Member</button>
         </form>
     </div><!--/#comment-form-->
 </section><!--/#about-us-->

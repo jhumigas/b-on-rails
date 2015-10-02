@@ -7,7 +7,10 @@ class MembersController < ApplicationController
 		respond_with Member.find(params[:id])
 	end
 	def create
-		respond_with Member.create(member_params)
+		m = Member.new(member_params)
+		m.avatar = params[:file]
+		m.save!
+		respond_with m
 	end
 	def update
 		respond_with Member.update(params[:id], params[:member])
@@ -18,6 +21,9 @@ class MembersController < ApplicationController
 
 	private
 	def member_params
-		params.require(:member).permit(:name,:position,:promotion,:abstract)
+		params.require(:member).permit(:avatar,:name,:position,:promotion,:abstract)
+	end
+	def as_json(options={})
+	    {:id => self.id, :name => self.name, :position =>self.position, :promotion => self.promotion, :abstract => self.abstract, :avatarUrl => self.avatar.url}
 	end
 end

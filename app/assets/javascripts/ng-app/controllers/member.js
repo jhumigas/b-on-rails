@@ -1,6 +1,6 @@
 angular
 	.module('myApp')
-	.factory('members',['$http',function($http){
+	.factory('members',['$http','Upload',function($http,Upload){
 		var m = {members:[]};
 		m.getAll = function(){
 			return $http.get('/members.json').success(function(data){
@@ -8,8 +8,18 @@ angular
 			});
 		};
 		m.create = function(member){
-			return $http.post('/members.json',member).success(function(data){
-				m.members.push(data);
+			Upload.upload({
+				url:'/members.json',
+				method: 'POST',	
+				fields: {'member[name]':member.name,
+				         'member[position]':member.position,
+						 'member[promotion]':member.promotion,
+						 'member[abstract]':member.abstract
+						},
+				file: member.avatar,
+				fileFormDataName: 'member[avatar]'
+			}).then(function(response){
+				m.members.push(response.data);
 			});
 		};
 		m.delete = function(id){
@@ -22,18 +32,10 @@ angular
 	}])
 	.controller('memberCtrl',['$scope','members',function($scope,members){
 		$scope.members = members.members;
-		$scope.addMember = function(){
-				if(!$scope.name || $scope.name === '') { return; }
-					members.create({
-					name: $scope.name,
-					position: $scope.position,
-					promotion: $scope.promotion,
-					abstract: $scope.abstract,
-				});
-				$scope.name = '';
-				$scope.position = '';
-				$scope.promotion= 0;
-				$scope.abstract ='';
+		console.log(members);
+		$scope.newMember = null;
+		$scope.addMember = function(member){
+			members.create(member);
 				};
 		$scope.deleteMember= function(member){
 			members.delete(member.id);
