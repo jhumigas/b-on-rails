@@ -58,7 +58,12 @@ angular
                     url: '/portofolio',
                     templateUrl: '../assets/portofolio.html',
                     parent: 'layout',
-                    controller:'portofolioCtrl'
+                    controller:'portofolioCtrl',
+                    resolve: {
+                        portofolioPromise : ['portofolios',function(portofolios){
+                            return portofolios.getAll();
+                        }]
+                    }
                 })
                 .state('blog', {
                     url: '/blog',

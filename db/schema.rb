@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150930133410) do
+ActiveRecord::Schema.define(version: 20151002082346) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "body",       limit: 65535
@@ -34,13 +34,11 @@ ActiveRecord::Schema.define(version: 20150930133410) do
   end
 
   create_table "portofolios", force: :cascade do |t|
-    t.string   "title",              limit: 255
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.string   "photo_file_name",    limit: 255
-    t.string   "photo_content_type", limit: 255
-    t.integer  "photo_file_size",    limit: 4
-    t.datetime "photo_updated_at"
+    t.string   "title",        limit: 255
+    t.string   "picture",      limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "type_service", limit: 255
   end
 
   create_table "posts", force: :cascade do |t|

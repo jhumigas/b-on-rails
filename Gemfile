@@ -10,7 +10,7 @@ gem 'responders', '~> 2.0'
 #to support csrf token
 gem 'angular_rails_csrf'
 # for files upload
-gem 'paperclip', '~> 4.2'
+gem 'carrierwave'
 # For authentification
 gem 'devise', '~> 3.4.0'
 

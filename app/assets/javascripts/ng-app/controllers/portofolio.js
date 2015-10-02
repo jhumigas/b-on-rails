@@ -2,33 +2,45 @@ angular
 	.module('myApp')
 	.factory('portofolios',['$http','Upload',function($http,Upload){
 		var o = {portofolios:[]};
-		o.create = function(portofolio){
-			return $http.post('/portofolios.json',portofolio).success(function(data){
-				return data;
+		o.getAll = function(){
+			return $http.get('/portofolios.json').success(function(data){
+				angular.copy(data, o.portofolios);
 			});
 		};
-		o.createWithImage=function(title,picFile){
+		o.create=function(title,picFile,typeService){
 			Upload.upload({
 				url:'/portofolios.json',
 				method: 'POST',	
-				fields: {'portofolio[title]':title},
+				fields: {'portofolio[title]':title,
+				         'portofolio[type_service]':typeService
+						},
 				file: picFile,
-				fileFormDataName: 'portofolio[photo]'
+				fileFormDataName: 'portofolio[picture]'
+			}).then(function(response){
+				o.portofolios.push(response.data);
+			});
+		};
+		o.delete = function(id){
+			return $http.delete('/portofolios/'+id+'.json').success(function(data){
+				o.getAll();
+				return data;
 			});
 		};
 		return o;
 		
 	}])
+	.directive('prettyp', function(){
+		return function(scope, element, attrs) {
+			$("[rel^='prettyPhoto']").prettyPhoto({deeplinking: false, social_tools: false});
+		};
+		})
 	.controller('portofolioCtrl',['$scope','portofolios',function($scope,portofolios){
-		$scope.addPortofolio = function(){
-			if(!$scope.title || $scope.title ===''){return;}
-			portofolios.create({
-				title: $scope.title,
-				image: $scope.file
-			});
+		$scope.portofolios = portofolios.portofolios;
+		$scope.uploadPicture = function(title,picFile,typeService){
+			portofolios.create(title,picFile,typeService);
 		};
-		$scope.uploadPicture = function(title,picFile){
-			console.log(picFile);
-			portofolios.createWithImage(title,picFile);
+		$scope.delete = function(portofolio){
+			portofolios.delete(portofolio.id);
 		};
+		
 	}]);
