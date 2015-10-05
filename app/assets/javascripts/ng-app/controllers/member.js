@@ -32,7 +32,6 @@ angular
 	}])
 	.controller('memberCtrl',['$scope','members',function($scope,members){
 		$scope.members = members.members;
-		console.log(members);
 		$scope.newMember = null;
 		$scope.addMember = function(member){
 			members.create(member);
