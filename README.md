@@ -26,7 +26,7 @@ Angular Modules required :
 * ngFileUpload
 * Devise
 
-ui.bootstrap is disabled for compatibility reasons.
+ui.bootstrap is disabled for compatibility reasons. This issue should be resolved before deployment.
 
 # Database
 
