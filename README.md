@@ -9,6 +9,10 @@ It is made to combine both AngularJS and Rails. The reliable tutorials I found o
 Find here the working board : [Trello] (https://trello.com/b/yEB6ZDxF/ruby-project)
 To get access to it : [sign in](https://trello.com/) then prompt me to add you.
 
+Once you make sure youu have rails set up on your system,
+run bundle install to install all the gems. The rake bower:install to install the modules required by angular.
+Don't forget rake db:create / rake db:migrate for the database management.
+
 # Ruby on Rails 
 
 This application requires : 
@@ -46,10 +50,6 @@ It is used for the picture uploading feature.
 
 Carrierwave uses [minimagick](https://github.com/minimagick/minimagick) to process some images i.e resizing large pictures. ImageMagick is required before!
 
-# Documentation 
-
-This doc should explain everything, from how to install the app to how to use it.
-Still under construction.
 
 # Overall architecture
 
