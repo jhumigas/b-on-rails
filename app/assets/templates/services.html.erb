@@ -30,11 +30,18 @@
                 <div class="blog-item">
                     <div class="blog-content">
                         <h2>{{service.title}}</h2>
-                        <a class="pull-right btn btn-social btn-danger" ng-click="deleteService(service)"><i class="icon-remove"></i></a>
+                        <a class="pull-right btn btn-social btn-danger" ng-show="signedIn()" ng-click="deleteService(service)"><i class="fa fa-times"></i></a>
+                        <a class="pull-right btn btn-social btn-warning" ng-show="signedIn()" ng-click="editableForm=!editableForm"><i class="icon-edit"></i></a>
+                        <a class="pull-right btn btn-social btn-success" ng-show="signedIn()" ng-click="update(service)"><i class="icon-ok"></i></a>
                         <blockquote>
                         <p class="lead">{{service.typeService}}</p>
                         </blockquote>
-                        <p>{{service.description}}</p>
+                        <p ng-hide="editableForm">{{service.description}}</p>
+                        <div class="form-group" ng-show="editableForm">
+                            <div class="col-sm-12">
+                                <textarea rows="8" class="form-control" placeholder="body" ng-model="service.description"></textarea>
+                            </div>
+                        </div>
                         <hr>
                         <p>&nbsp;</p>
                     </div>

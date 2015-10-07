@@ -15,7 +15,10 @@ class PostsController < ApplicationController
 		respond_with post
 	end
 	def update
-		respond_with Post.update(params[:id], params[:post])
+		respond_with Post.update(params[:id], post_params)
+	end
+	def destroy
+		respond_with Post.destroy(params[:id])
 	end
 
 	private

@@ -13,7 +13,7 @@ class MembersController < ApplicationController
 		respond_with m
 	end
 	def update
-		respond_with Member.update(params[:id], params[:member])
+		respond_with Member.update(params[:id], member_params)
 	end
 	def destroy
 		respond_with Member.destroy(params[:id])

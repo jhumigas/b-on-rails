@@ -10,7 +10,7 @@ class ServicesController < ApplicationController
 		respond_with Service.create(service_params)
 	end
 	def update
-		respond_with Service.update(params[:id], params[:service])
+		respond_with Service.update(params[:id], service_params)
 	end
 	def destroy
 		respond_with Service.destroy(params[:id])

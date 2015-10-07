@@ -12,6 +12,11 @@ angular
 				t.services.push(data);
 			});
 		};
+		t.update = function(id,service){
+			return $http.put('/services/'+id+'.json',service).success(function(data){
+				
+			});
+		};
 		t.delete = function(id){
 			return $http.delete('/services/'+id+'.json').success(function(){
 				t.getAll();
@@ -20,6 +25,7 @@ angular
 		return t;
 	}])
 	.controller('serviceCtrl',['$scope','services',function($scope,services){
+		$scope.editableForm = false;
 		$scope.services = services.services;
 		$scope.addService = function(){
 				if(!$scope.title || $scope.title === '') { return; }
@@ -34,6 +40,14 @@ angular
 				};
 	    $scope.deleteService = function(service){
 			services.delete(service.id);
-		};		
+		};	
+		$scope.update = function(service){
+			services.update(service.id,{
+					title: service.title,
+					typeService: service.typeService,
+					description: service.description
+			});
+			$scope.editableForm = false;
+		};	
 		
 	}]);

@@ -56,18 +56,27 @@
                             <span><i class="icon-user"></i> <a href="#">{{post.user.username}}</a></span>
                             <span><i class="icon-calendar"></i>  {{post.created_at|date:'mediumDate'}}</span>
                             <span ng-hide="signedIn()"><a><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
-                            <span ng-show="signedIn() "ng-click="incrementUpvotes(post)"><a><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
-                            <span><i class="icon-comment"></i> {{post.comments.length}}</span>       
+                            <span ng-show="signedIn() "ng-click="incrementUpvotes(post)"><a href="#"><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
+                            <span><i class="icon-comment"></i> {{post.comments.length}}</span>      
                         </div>
-                        <p class="lead">{{post.abstract}}</p>
-
-                        <p>{{post.body}}</p>
-
+                        <p class="lead" ng-hide="editionEnabled">{{post.abstract}}</p>
+                        <div class="form-group" ng-show="editionEnabled">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Abstract" ng-model="post.abstract">
+                            </div>
+                        </div>
+                        <p ng-hide="editionEnabled">{{post.body}}</p>
+                        <div class="form-group" ng-show="editionEnabled">
+                            <div class="col-sm-12">
+                                <textarea rows="8" class="form-control" placeholder="body" ng-model="post.body"></textarea>
+                            </div>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="..." ng-show="signedIn()">
+                            <button class="btn btn-warning btn-sm" ng-click="editionEnabled=!editionEnabled"><i class="icon-edit"></i></button>
+                            <button class="btn btn-success btn-sm" ng-click="update()"><i class="icon-ok"></i></button>
+                            <button class="btn btn-danger btn-sm" ng-click="delete()"><i class="fa fa-times"></i></button>
+                        </div>
                         <hr>
-
-                        <div class="tags">
-                            <i class="icon-tags"></i> Tags <a class="btn btn-xs btn-primary" href="#">CSS3</a> <a class="btn btn-xs btn-primary" href="#">HTML5</a> <a class="btn btn-xs btn-primary" href="#">WordPress</a> <a class="btn btn-xs btn-primary" href="#">Joomla</a>
-                        </div>
 
                         <p>&nbsp;</p>
 

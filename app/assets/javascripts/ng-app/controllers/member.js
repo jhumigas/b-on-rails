@@ -22,6 +22,11 @@ angular
 				m.members.push(response.data);
 			});
 		};
+		m.update = function(id,member){
+			return $http.put('/members/'+id+'.json',member).success(function(res){
+				
+			});
+		};
 		m.delete = function(id){
 			return $http.delete('/members/'+id+'.json').success(function(data){
 				m.getAll();
