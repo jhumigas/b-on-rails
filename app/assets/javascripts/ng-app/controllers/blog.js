@@ -18,8 +18,8 @@ angular
 				});
 			};
 			o.get =function(id){
-				return $http.get('/posts/'+id+'.json').then(function(res){
-					return res.data;
+				return $http.get('/posts/'+id+'.json').success(function(data){
+					return data;
 				});
 			};
 			o.update = function(id,post){

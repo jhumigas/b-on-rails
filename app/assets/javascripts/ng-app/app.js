@@ -97,13 +97,15 @@ angular
                     templateUrl: '../assets/career.html',
                 })
                 .state('blogItem', {
-                    url: '/blogItem',
+                    url: '/blogItem/{idpost}',
                     templateUrl: '../assets/blog-item.html',
                     parent:'layout',
                     controller: 'blogItemCtrl',
-                    params : {
-                        post : null,
-                    }
+                    resolve : {
+                        idpost : ['$stateParams',function($stateParams){
+                            return $stateParams.idpost;
+                        }]
+                    },
                 });
                 
                 

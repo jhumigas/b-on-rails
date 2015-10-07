@@ -7,7 +7,7 @@
             </div>
             <div class="col-sm-6">
                 <ul class="breadcrumb pull-right">
-                    <li><a href="home">Accueil</a></li>
+                    <li><a ui-sref="home">Accueil</a></li>
                     <li class="active">Blog</li>
                 </ul>
             </div>
@@ -75,7 +75,7 @@
                             <span><i class="icon-comment"></i> {{post.comments.length}}</span>
                         </div>
                         <p>{{post.abstract}}</p>
-                        <a class="btn btn-default" ui-sref="blogItem({post:post})">Read More <i class="icon-angle-right"></i></a>
+                        <a class="btn btn-default" ui-sref="blogItem({idpost: post.id})">Read More <i class="icon-angle-right"></i></a>
                     </div>
                 </div><!--/.blog-item-->
                 <div ng-show="signedIn()">

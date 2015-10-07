@@ -10,8 +10,13 @@ angular
 			fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		
+		$scope.init = function(){
+			$scope.post = posts.get($stateParams.idpost).then(function(response){
+				$scope.post = response.data;
+			});
+		};
 		$scope.editionEnabled = false; //editable state
-		$scope.post = $stateParams.post;
+		//$scope.post = $stateParams.post;
 		$scope.incrementUpvotes = function(post){
 			posts.upvote(post);
 		};
