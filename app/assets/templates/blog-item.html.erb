@@ -73,7 +73,7 @@
                         </div>
                         <div class="btn-group" role="group" aria-label="..." ng-show="signedIn()">
                             <button class="btn btn-warning btn-sm" ng-click="editionEnabled=!editionEnabled"><i class="icon-edit"></i></button>
-                            <button class="btn btn-success btn-sm" ng-click="update()"><i class="icon-ok"></i></button>
+                            <button class="btn btn-success btn-sm" ng-click="update()" ng-show="editionEnabled"><i class="icon-ok"></i></button>
                             <button class="btn btn-danger btn-sm" ng-click="delete()"><i class="fa fa-times"></i></button>
                         </div>
                         <hr>

@@ -32,7 +32,7 @@
                         <h2>{{service.title}}</h2>
                         <a class="pull-right btn btn-social btn-danger" ng-show="signedIn()" ng-click="deleteService(service)"><i class="fa fa-times"></i></a>
                         <a class="pull-right btn btn-social btn-warning" ng-show="signedIn()" ng-click="editableForm=!editableForm"><i class="icon-edit"></i></a>
-                        <a class="pull-right btn btn-social btn-success" ng-show="signedIn()" ng-click="update(service)"><i class="icon-ok"></i></a>
+                        <a class="pull-right btn btn-social btn-success" ng-show="signedIn() && !editableForm" ng-click="update(service)"><i class="icon-ok"></i></a>
                         <blockquote>
                         <p class="lead">{{service.typeService}}</p>
                         </blockquote>
