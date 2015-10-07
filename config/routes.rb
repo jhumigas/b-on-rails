@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 # Routes for the app functions 
-resources :posts, only: [:create, :index, :show, :edit, :update, :destroy] do
+resources :posts, only: [:create, :index, :show, :update, :destroy] do
     resources :comments, only: [:show, :create, :destroy] do
       member do
        # put '/upvote' => 'comments#upvote'

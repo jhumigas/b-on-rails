@@ -1,4 +1,5 @@
 class PortofoliosController < ApplicationController
+	before_filter :authenticate_user!, only: [:create, :destroy]
     def index
 		respond_with Portofolio.all
 	end
@@ -10,9 +11,6 @@ class PortofoliosController < ApplicationController
 		p.picture = params[:file]
 	    p.save!
 		respond_with p
-	end
-	def update
-		respond_with Portofolio.update(params[:id], params[:portofolio])
 	end
 	def destroy
 		respond_with Portofolio.destroy(params[:id])

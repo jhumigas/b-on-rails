@@ -13,6 +13,9 @@ angular
 		$scope.incrementUpvotes = function(post){
 			posts.upvote(post);
 		};
+		$scope.update = function(post){
+			
+		};
 		$scope.addComment = function(){
 			if($scope.body === '') { return; }
 			posts.addComment($scope.post.id, {

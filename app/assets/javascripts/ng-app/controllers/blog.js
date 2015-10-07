@@ -1,17 +1,17 @@
 angular
 	.module('myApp')
 	.factory('posts',['$http',function($http){
-		  var o = {posts: []};
-		  o.getAll = function(){
-			  return $http.get('/posts.json').success(function(data){
-				  angular.copy(data,o.posts);
-			  });
-		  };
-		  o.create = function(post) {
-			return $http.post('/posts.json', post).success(function(data){
-				o.posts.push(data);
-			});
+			var o = {posts: []};
+			o.getAll = function(){
+				return $http.get('/posts.json').success(function(data){
+					angular.copy(data,o.posts);
+				});
 			};
+			o.create = function(post) {
+				return $http.post('/posts.json', post).success(function(data){
+					o.posts.push(data);
+				});
+				};
 			o.upvote = function(post){
 				return $http.put('/posts/'+post.id+'/upvote.json').success(function(data){
 					post.upvotes +=1;
@@ -20,6 +20,11 @@ angular
 			o.get =function(id){
 				return $http.get('/posts/'+id+'.json').then(function(res){
 					return res.data;
+				});
+			};
+			o.update = function(id, post){
+				return $http.put('/posts/'+id+'.json', post).success(function(res){
+					
 				});
 			};
 			o.addComment = function(id,comment){
