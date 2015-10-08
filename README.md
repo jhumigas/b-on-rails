@@ -26,7 +26,7 @@ This application uses [AngularJS](https://angularjs.org/)
 Angular Modules required :
 * ngAnimate
 * ui.bootstrap
-* ui-router > manages the routings 
+* ui-router > manages the routings on the client-side service 
 * templates
 * ngFileUpload
 * Devise
