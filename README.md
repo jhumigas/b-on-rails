@@ -31,6 +31,11 @@ Angular Modules required :
 * ngFileUpload
 * Devise
 
+To make sure that Rails allows angular to handle our client side routing, the following two lines were added in app/assets/javascripts/application.js:
+```sh
+root 'application#index'
+get '*path' => 'application#index'
+```
 ui.bootstrap is disabled for compatibility reasons. This issue should be resolved before deployment.
 
 # Database
