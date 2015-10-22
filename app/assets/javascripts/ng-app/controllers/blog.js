@@ -13,8 +13,8 @@ angular
 				});
 				};
 			o.upvote = function(post){
-				return $http.put('/posts/'+post.id+'/upvote.json').success(function(data){
-					post.upvotes +=1;
+				return $http.put('/posts/'+post.id+'/upvote.json').then(function(response){
+					post = o.get(post.id);
 				});
 			};
 			o.get =function(id){

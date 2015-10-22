@@ -11,8 +11,9 @@ class PostsController < ApplicationController
 	end
 	def upvote
 		post= Post.find(params[:id])
-		post.increment!(:upvotes)
-		respond_with post
+		post.upvote_by current_user
+		post[:upvotes] = post.get_upvotes.size
+		respond_with post.save
 	end
 	def update
 		respond_with Post.update(params[:id], post_params)
