@@ -11,7 +11,7 @@ Once you make sure you have rails set up on your system,
 run bundle install to install all the gems. The rake bower:install to install the modules required by angular.
 Don't forget rake db:create / rake db:migrate for the database management.
 
-For the beginners in Rails or/and Angular, there are two main tutorials the main tasks:
+For the beginners in Rails or/and Angular, there are two main tutorials I recommend :
 * [JCole Morrison's tutorial](http://start.jcolemorrison.com/angularjs-rails-4-1-and-ui-router-tutorial/)
 * [Thinkster's tutorial](https://thinkster.io/angular-rails/)
 
