@@ -2,16 +2,18 @@
 
 I'm *still* building this app for a students NGO. It's meant to be pretty basic, with blog-like features. 
 The user can manage member, posts, and services.
-It is made to combine both AngularJS and Rails. The reliable tutorials I found on the net are:
-* [JCole Morrison's tutorial](http://start.jcolemorrison.com/angularjs-rails-4-1-and-ui-router-tutorial/)
-* [Thinkster's tutorial](https://thinkster.io/angular-rails/)
+It is made to combine both AngularJS and Rails. 
 
 Find here the working board : [Trello] (https://trello.com/b/yEB6ZDxF/ruby-project)
 To get access to it : [sign in](https://trello.com/) then prompt me to add you.
 
-Once you make sure youu have rails set up on your system,
+Once you make sure you have rails set up on your system,
 run bundle install to install all the gems. The rake bower:install to install the modules required by angular.
 Don't forget rake db:create / rake db:migrate for the database management.
+
+For the beginners in Rails or/and Angular, there are two main tutorials the main tasks:
+* [JCole Morrison's tutorial](http://start.jcolemorrison.com/angularjs-rails-4-1-and-ui-router-tutorial/)
+* [Thinkster's tutorial](https://thinkster.io/angular-rails/)
 
 # Ruby on Rails 
 
