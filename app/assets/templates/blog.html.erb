@@ -64,7 +64,7 @@
         </aside>        
         <div class="col-sm-8 col-sm-pull-4">
             <div class="blog">
-                <div class="blog-item"  ng-repeat="post in posts| filter: searchText">
+                <div class="blog-item"  ng-repeat="post in blog.posts| filter: searchText">
                     <!--<img class="img-responsive img-blog" src="../assets/images/blog/blog1.jpg" width="100%" alt="" />-->
                     <div class="blog-content">
                         <h3>{{post.title}}</h3>
@@ -78,25 +78,25 @@
                         <a class="btn btn-default" ui-sref="blogItem({idpost: post.id})">Read More <i class="icon-angle-right"></i></a>
                     </div>
                 </div><!--/.blog-item-->
-                <div ng-show="signedIn()">
+                <div ng-show="layout.signedIn()">
                     <h3>Create a Post</h3>
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" placeholder="Title" ng-model="title">
+                                <input type="text" class="form-control" placeholder="Title" ng-model="blog.title">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" placeholder="Abstract" ng-model="abstract">
+                                <input type="text" class="form-control" placeholder="Abstract" ng-model="blog.abstract">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <textarea rows="8" class="form-control" placeholder="body" ng-model="body"></textarea>
+                                <textarea rows="8" class="form-control" placeholder="body" ng-model="blog.body"></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-danger btn-lg" ng-click="addPost()">Submit Post</button>
+                        <button type="submit" class="btn btn-danger btn-lg" ng-click="blog.addPost()">Submit Post</button>
                     </form>
                 </div><!--/#post-form-->
                 <ul class="pagination pagination-lg">

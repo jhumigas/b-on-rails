@@ -14,8 +14,8 @@
 				<li ui-sref-active="active"><a ui-sref="home">Accueil</a></li>
 				<li ui-sref-active="active"><a ui-sref="about">L'association</a></li>
 				<li ui-sref-active="active"><a ui-sref="services">Notre action</a></li>
-				<li ui-sref-active="active" ng-show="signedIn()"><a ui-sref="portofolio">Portofolio</a></li>
-				<li ui-sref-active="active" ng-show="signedIn()"><a ui-sref="blog">Blog</a></li> 
+				<li ui-sref-active="active" ng-show="layout.signedIn()"><a ui-sref="portofolio">Portofolio</a></li>
+				<li ui-sref-active="active" ng-show="layout.signedIn()"><a ui-sref="blog">Blog</a></li> 
 				<!--<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
 					<ul class="dropdown-menu">
@@ -26,9 +26,9 @@
 					</ul>
 				</li>-->
 				<li ui-sref-active="active"><a ui-sref="contact">Nous contacter</a></li>
-				<li ui-sref-active="active" ng-hide="signedIn()"><a ui-sref="register">Log In</a></li>
-				<li ng-show="signedIn()"><a>{{ user.username }}</a></li>
-				<li ng-show="signedIn()"><a ng-click="logout()">Log Out</a></li>
+				<li ui-sref-active="active" ng-hide="layout.signedIn()"><a ui-sref="register">Log In</a></li>
+				<li ng-show="layout.signedIn()"><a>{{ layout.user.username }}</a></li>
+				<li ng-show="layout.signedIn()"><a ng-click="layout.logout()">Log Out</a></li>
 			</ul>
 		</div>
 	</div>

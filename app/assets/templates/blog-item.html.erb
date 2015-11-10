@@ -1,4 +1,4 @@
-<section id="blog" class="container" ng-init="init()">
+<section id="blog" class="container" ng-init="blogItem.init()">
     <div class="row">
         <aside class="col-sm-4 col-sm-push-8">
             <div class="widget search">
@@ -51,30 +51,30 @@
                 <div class="blog-item">
                     <!--<img class="img-responsive img-blog" src="../assets/images/blog/blog2.jpg" width="100%" alt="" />-->
                     <div class="blog-content">
-                        <h3>{{post.title}}</h3>
+                        <h3>{{blogItem.post.title}}</h3>
                         <div class="entry-meta">
-                            <span><i class="icon-user"></i> <a href="#">{{post.user.username}}</a></span>
-                            <span><i class="icon-calendar"></i>  {{post.created_at|date:'mediumDate'}}</span>
-                            <span ng-hide="signedIn()"><a><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
-                            <span ng-show="signedIn() "ng-click="incrementUpvotes(post)"><a href="#"><i class="icon-thumbs-up"></i> {{post.upvotes}}</a></span>
-                            <span><i class="icon-comment"></i> {{post.comments.length}}</span>      
+                            <span><i class="icon-user"></i> <a href="#">{{blogItem.post.user.username}}</a></span>
+                            <span><i class="icon-calendar"></i>  {{blogItem.post.created_at|date:'mediumDate'}}</span>
+                            <span ng-hide="layout.signedIn()"><a><i class="icon-thumbs-up"></i> {{blogItem.post.upvotes}}</a></span>
+                            <span ng-show="layout.signedIn()" ng-click="blogItem.incrementUpvotes(blogItem.post)"><a><i class="icon-thumbs-up"></i> {{blogItem.post.upvotes}}</a></span>
+                            <span><i class="icon-comment"></i> {{blogItem.post.comments.length}}</span>      
                         </div>
-                        <p class="lead" ng-hide="editionEnabled">{{post.abstract}}</p>
+                        <p class="lead" ng-hide="editionEnabled">{{blogItem.post.abstract}}</p>
                         <div class="form-group" ng-show="editionEnabled">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" placeholder="Abstract" ng-model="post.abstract">
+                                <input type="text" class="form-control" placeholder="Abstract" ng-model="blogItem.post.abstract">
                             </div>
                         </div>
-                        <p ng-hide="editionEnabled">{{post.body}}</p>
+                        <p ng-hide="editionEnabled">{{blogItem.post.body}}</p>
                         <div class="form-group" ng-show="editionEnabled">
                             <div class="col-sm-12">
-                                <textarea rows="8" class="form-control" placeholder="body" ng-model="post.body"></textarea>
+                                <textarea rows="8" class="form-control" placeholder="body" ng-model="blogItem.post.body"></textarea>
                             </div>
                         </div>
-                        <div class="btn-group" role="group" aria-label="..." ng-show="signedIn()">
+                        <div class="btn-group" role="group" aria-label="..." ng-show="layout.signedIn()">
                             <button class="btn btn-warning btn-sm" ng-click="editionEnabled=!editionEnabled"><i class="icon-edit"></i></button>
-                            <button class="btn btn-success btn-sm" ng-click="update()" ng-show="editionEnabled"><i class="icon-ok"></i></button>
-                            <button class="btn btn-danger btn-sm" ng-click="delete()"><i class="fa fa-times"></i></button>
+                            <button class="btn btn-success btn-sm" ng-click="blogItem.update()" ng-show="editionEnabled"><i class="icon-ok"></i></button>
+                            <button class="btn btn-danger btn-sm" ng-click="blogItem.delete()"><i class="fa fa-times"></i></button>
                         </div>
                         <hr>
 
@@ -96,7 +96,7 @@
 
                         <div id="comments">
                             <div id="comments-list">
-                                <h3>{{post.comments.length}} Comments</h3>
+                                <h3>{{blogItem.post.comments.length}} Comments</h3>
                                 <div class="media">
                                     <div class="pull-left">
                                         <img class="avatar img-circle" src="../assets/images/blog/avatar1.png" alt="">
@@ -125,7 +125,7 @@
                                         </div><!--/.media-->
                                     </div>
                                 </div><!--/.media-->
-                                <div class="media" ng-repeat="comment in post.comments track by $index">
+                                <div class="media" ng-repeat="comment in blogItem.post.comments track by $index">
                                     <div class="pull-left">
                                         <img class="avatar img-circle" src="../assets/images/blog/avatar2.png" alt="">
                                     </div>
@@ -141,7 +141,7 @@
                                 </div><!--/.media-->
                             </div><!--/#comments-list-->  
 
-                            <div id="comment-form" ng-show="signedIn()">
+                            <div id="comment-form" ng-show="layout.signedIn()">
                                 <h3>Leave a comment</h3>
                                 <form class="form-horizontal" role="form">
                                     <!--<div class="form-group">
@@ -151,10 +151,10 @@
                                     </div>-->
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <textarea rows="8" class="form-control" placeholder="Comment" ng-model="body"></textarea>
+                                            <textarea rows="8" class="form-control" placeholder="Comment" ng-model="blogItem.body"></textarea>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-danger btn-lg" ng-click="addComment()">Submit Comment</button>
+                                    <button type="submit" class="btn btn-danger btn-lg" ng-click="blogItem.addComment()">Submit Comment</button>
                                 </form>
                             </div><!--/#comment-form-->
                         </div><!--/#comments-->

@@ -85,12 +85,12 @@
     <div class="gap"></div>
 
     <div id="meet-the-team" class="row">
-        <div class="col-md-3 col-xs-6" ng-repeat="member in members">
+        <div class="col-md-3 col-xs-6" ng-repeat="item in member.members">
             <div class="center">
-                <p><img class="img-responsive img-thumbnail img-circle" ng-src="{{member.avatar.url == null ?'../assets/images/team-default.png':member.avatar.url}}" alt="" ></p>
-                <h5>{{member.name}}<small class="designation muted">{{member.position}} - CS{{member.promotion}}</small></h5>
-                <p>{{member.abstract}}</p>
-                <a ng-show="signedIn()" class="btn btn-social btn-danger" ng-click="deleteMember(member)"><i class="icon-remove"></i></a>
+                <p><img class="img-responsive img-thumbnail img-circle" ng-src="{{item.avatar.url == null ?'../assets/images/team-default.png':item.avatar.url}}" alt="" ></p>
+                <h5>{{item.name}}<small class="designation muted">{{item.position}} - CS{{item.promotion}}</small></h5>
+                <p>{{item.abstract}}</p>
+                <a ng-show="layout.signedIn()" class="btn btn-social btn-danger" ng-click="member.deleteMember(item)"><i class="icon-remove"></i></a>
             </div>
         </div>
 
@@ -103,32 +103,32 @@
             </div>
         </div>-->      
     </div><!--/#meet-the-team-->
-    <div id="member-form" ng-show="signedIn()">
+    <div id="member-form" ng-show="layout.signedIn()">
         <h3>Add a Member</h3>
         <form class="form-horizontal" role="form">
             <div class="form-group">
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" placeholder="Name" ng-model="newMember.name">
+                    <input type="text" class="form-control" placeholder="Name" ng-model="member.newMember.name">
                 </div>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" placeholder="position" ng-model="newMember.position">
+                    <input type="text" class="form-control" placeholder="position" ng-model="member.newMember.position">
                 </div>
                 <div class="col-sm-4">
-                    <input type="number" class="form-control" placeholder="promotion" ng-model="newMember.promotion">
+                    <input type="number" class="form-control" placeholder="promotion" ng-model="member.newMember.promotion">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-12">
-                    <textarea rows="8" class="form-control" placeholder="Abstract" ng-model="newMember.abstract"></textarea>
+                    <textarea rows="8" class="form-control" placeholder="Abstract" ng-model="member.newMember.abstract"></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-12">
-                    <input type="file" rows="8" class="form-control" ngf-select="upload($files, $file, $event)" ng-model="newMember.avatar">
-                    <img ngf-src="newMember.avatar" ngf-background="newMember.avatar" ngf-resize="{width: 20, height: 20, quality: 0.9}">
+                    <input type="file" rows="8" class="form-control" ngf-select="upload($files, $file, $event)" ng-model="member.newMember.avatar">
+                    <img ngf-src="member.newMember.avatar" ngf-background="member.newMember.avatar" ngf-resize="{width: 20, height: 20, quality: 0.9}">
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger btn-lg" ng-click="addMember(newMember)">Create Member</button>
+            <button type="submit" class="btn btn-danger btn-lg" ng-click="member.addMember(member.newMember)">Create Member</button>
         </form>
     </div><!--/#comment-form-->
 </section><!--/#about-us-->

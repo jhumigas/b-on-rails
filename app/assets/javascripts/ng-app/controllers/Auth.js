@@ -1,15 +1,24 @@
-angular
-	.module('myApp')
-	.controller('AuthCtrl',['$scope','$state','Auth',function($scope,$state,Auth){
-		$scope.login = function() {
-			Auth.login($scope.user).then(function(){
-			$state.go('home');
-			});
-		};
-
-		$scope.register = function() {
-			Auth.register($scope.user).then(function(){
-			$state.go('home');
-			});
-		};
-	}]);
+(function(){
+	'use strict';
+	
+	angular
+		.module('myApp')
+		.controller('AuthCtrl', AuthCtrl);
+		
+		function AuthCtrl($state,Auth){
+			
+			/* jshint validthis: true */
+			var authCtrl = this;
+			authCtrl.login = function() {
+				Auth.login(authCtrl.user).then(function(){
+				$state.go('home');
+				});
+			};
+	
+			authCtrl.register = function() {
+				Auth.register(authCtrl.user).then(function(){
+				$state.go('home');
+				});
+			};
+		}
+})();

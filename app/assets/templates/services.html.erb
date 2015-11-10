@@ -70,20 +70,20 @@
             </div>
         </div><!--/.row-->
         <div class="row col-md-12">
-            <div class="blog" ng-repeat="service in services track by $index">
+            <div class="blog" ng-repeat="item in service.services track by $index">
                 <div class="blog-item">
                     <div class="blog-content">
-                        <h2>{{service.title}}</h2>
-                        <a class="pull-right btn btn-social btn-danger" ng-show="signedIn()" ng-click="deleteService(service)"><i class="fa fa-times"></i></a>
-                        <a class="pull-right btn btn-social btn-warning" ng-show="signedIn()" ng-click="editableForm=!editableForm"><i class="icon-edit"></i></a>
-                        <a class="pull-right btn btn-social btn-success" ng-show="signedIn() && !editableForm" ng-click="update(service)"><i class="icon-ok"></i></a>
+                        <h2>{{item.title}}</h2>
+                        <a class="pull-right btn btn-social btn-danger" ng-show="layout.signedIn()" ng-click="service.deleteService(item)"><i class="fa fa-times"></i></a>
+                        <a class="pull-right btn btn-social btn-warning" ng-show="layout.signedIn() && !editableForm" ng-click="editableForm=!editableForm"><i class="icon-edit"></i></a>
+                        <a class="pull-right btn btn-social btn-success" ng-show="layout.signedIn() && editableForm" ng-click="service.update(item);editableForm=!editableForm "><i class="icon-ok"></i></a>
                         <blockquote>
-                        <p class="lead">{{service.typeService}}</p>
+                        <p class="lead">{{item.typeService}}</p>
                         </blockquote>
-                        <p ng-hide="editableForm">{{service.description}}</p>
+                        <p ng-hide="editableForm">{{item.description}}</p>
                         <div class="form-group" ng-show="editableForm">
                             <div class="col-sm-12">
-                                <textarea rows="8" class="form-control" placeholder="body" ng-model="service.description"></textarea>
+                                <textarea rows="8" class="form-control" placeholder="body" ng-model="item.description"></textarea>
                             </div>
                         </div>
                         <hr>
@@ -91,23 +91,23 @@
                     </div>
                 </div><!--/.blog-item-->
             </div>
-            <div ng-show="signedIn()">
+            <div ng-show="layout.signedIn()">
                 <h3>Create a Service</h3>
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Title" ng-model="title">
+                            <input type="text" class="form-control" placeholder="Title" ng-model="service.title">
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Type du projet (projet, mission, campus, etc)" ng-model="typeService">
+                            <input type="text" class="form-control" placeholder="Type du projet (projet, mission, campus, etc)" ng-model="service.typeService">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-12">
-                            <textarea rows="8" class="form-control" placeholder="body" ng-model="description"></textarea>
+                            <textarea rows="8" class="form-control" placeholder="body" ng-model="service.description"></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-danger btn-lg" ng-click="addService()">Submit Post</button>
+                    <button type="submit" class="btn btn-danger btn-lg" ng-click="service.addService()">Submit Post</button>
                 </form>
             </div><!--/#service-form-->
         </div><!--/.col-md-8-->
