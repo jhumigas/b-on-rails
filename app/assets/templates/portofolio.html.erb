@@ -35,10 +35,10 @@
  <section class="container">
     <div class="col-sm-12">
         <h3>Add a Picture</h3>
-        <form class="form-horizontal" role="form">
+        <form class="form-horizontal" role="form" name="pictureForm">
             <div class="form-group">
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" ng-model="portofolio.title">
+                    <input type="text" class="form-control" ng-model="portofolio.title" required>
                 </div>
                 <div class="col-sm-4">
                         <select name="portofolio.typeService" ng-model="portofolio.typeService" class="form-control">
@@ -50,11 +50,11 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-12">
-                    <input type="file" rows="8" class="form-control" ngf-select="upload($files, $file, $event)" ng-model="portofolio.filePic">
+                    <input type="file" rows="8" class="form-control" ngf-select="upload($files, $file, $event)" ng-model="portofolio.filePic" required>
                     <img ngf-src="portofolio.filePic" ngf-background="portofolio.filePic" ngf-resize="{width: 20, height: 20, quality: 0.9}">
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger btn-lg" ng-click="portofolio.uploadPicture(portofolio.title, portofolio.filePic,portofolio.typeService)">Submit Picture</button>      
+            <button type="submit" class="btn btn-danger btn-lg" ng-click="portofolio.uploadPicture(portofolio.title, portofolio.filePic,portofolio.typeService)" ng-disabled="pictureForm.$error.required">Submit Picture</button>      
         </form>
     </div><!--/#post-form-->
  </section>
