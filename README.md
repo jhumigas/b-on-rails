@@ -18,7 +18,12 @@ rake bower:install
 ```
 
 to install the modules required by angular.
-Don't forget rake db:create / rake db:migrate for the database management.
+Don't forget 
+```sh
+rake db:create
+rake db:migrate
+```
+for the database management.
 
 For the beginners in Rails or/and Angular, there are two main tutorials I recommend :
 * [JCole Morrison's tutorial](http://start.jcolemorrison.com/angularjs-rails-4-1-and-ui-router-tutorial/)
