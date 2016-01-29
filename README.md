@@ -8,7 +8,16 @@ Find here the working board : [Trello] (https://trello.com/b/yEB6ZDxF/ruby-proje
 To get access to it : [sign in](https://trello.com/) then prompt me to add you.
 
 Once you make sure you have rails set up on your system,
-run bundle install to install all the gems. The rake bower:install to install the modules required by angular.
+run 
+```sh
+bundle install 
+```
+to install all the gems. The 
+```sh
+rake bower:install 
+```
+
+to install the modules required by angular.
 Don't forget rake db:create / rake db:migrate for the database management.
 
 For the beginners in Rails or/and Angular, there are two main tutorials I recommend :
