@@ -6,7 +6,7 @@
         [
             'ngAnimate',
             'ui.router',
-        //  'ui.bootstrap',
+          //  'ui.bootstrap',
             'templates',
             'ngFileUpload',
             'Devise'
