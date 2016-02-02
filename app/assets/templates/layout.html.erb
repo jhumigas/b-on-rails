@@ -26,9 +26,9 @@
 					</ul>
 				</li>-->
 				<li ui-sref-active="active"><a ui-sref="contact">Nous contacter</a></li>
-				<li ui-sref-active="active" ng-hide="layout.signedIn()"><a ui-sref="register">Log In</a></li>
+				<li ui-sref-active="active" ng-hide="layout.signedIn()"><a ui-sref="login">Log In</a></li>
 				<li ng-show="layout.signedIn()"><a>{{ layout.user.username }}</a></li>
-				<li ng-show="layout.signedIn()"><a ng-click="layout.logout()">Log Out</a></li>
+				<li ng-show="layout.signedIn()"><a ng-click="layout.logout()"><i class="fa fa-sign-out"></i></a></li>
 			</ul>
 		</div>
 	</div>

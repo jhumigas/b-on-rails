@@ -22,9 +22,9 @@
                         abstract:true,
                         controller: 'LayoutCtrl as layout'
                     })
-                    .state('register',{
-                        urm: '/register',
-                        templateUrl: '../assets/registration.html',
+                    .state('login',{
+                        urm: '/login',
+                        templateUrl: '../assets/login.html',
                         parent: 'layout',
                         controller: 'AuthCtrl as authCtrl',
                         /*onEnter: ['$state', 'Auth', function($state, Auth) {
