@@ -865,6 +865,9 @@ ul.tag-cloud li {
   margin-left: 10px;
   border: 0;
 }
+ul.pagination > li.active > a, ul.pagination > li:hover > a.pagenumber {
+    cursor: pointer;
+}
 .gap {
   margin-bottom: 50px;
 }

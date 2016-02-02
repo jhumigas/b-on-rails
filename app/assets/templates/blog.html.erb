@@ -64,20 +64,7 @@
         </aside>        
         <div class="col-sm-8 col-sm-pull-4">
             <div class="blog">
-                <div class="blog-item"  ng-repeat="post in blog.posts| filter: searchText">
-                    <!--<img class="img-responsive img-blog" src="../assets/images/blog/blog1.jpg" width="100%" alt="" />-->
-                    <div class="blog-content">
-                        <h3>{{post.title}}</h3>
-                        <div class="entry-meta">
-                            <span><i class="icon-user"></i> {{post.user.username}}</span>
-                            <span><i class="icon-calendar"></i> {{post.created_at|date:'mediumDate'}}</span>
-                            <span><i class="icon-thumbs-up"></i> {{post.upvotes}}</span>
-                            <span><i class="icon-comment"></i> {{post.comments.length}}</span>
-                        </div>
-                        <p>{{post.abstract}}</p>
-                        <a class="btn btn-default" ui-sref="blogItem({idpost: post.id})">Read More <i class="icon-angle-right"></i></a>
-                    </div>
-                </div><!--/.blog-item-->
+                <ui-view class="blog"></ui-view>
                 <div ng-show="layout.signedIn()">
                     <h3>Create a Post</h3>
                     <form class="form-horizontal" role="form" name="PostForm">
@@ -99,17 +86,7 @@
                         <button type="submit" class="btn btn-danger btn-lg" ng-click="blog.addPost()" ng-disabled ="PostForm.$error.required">Submit Post</button>
                     </form>
                 </div><!--/#post-form-->
-                <ul class="pagination pagination-lg">
-                    <li><a href="#"><i class="icon-angle-left"></i></a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><i class="icon-angle-right"></i></a></li>
-                </ul><!--/.pagination-->
             </div>
         </div><!--/.col-md-8-->
     </div><!--/.row-->
 </section><!--/#blog-->
-<ui-view></ui-view>

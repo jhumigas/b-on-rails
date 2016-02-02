@@ -13,6 +13,8 @@ resources :posts, only: [:create, :index, :show, :update, :destroy] do
       put '/upvote' => 'posts#upvote'
     end
   end
+get '/posts/page/:page', to: 'posts#get_page'
+get '/posts/paginate/numberofpages', to: 'posts#get_number_of_pages'
 resources :members, only:[:create, :index, :show, :update, :destroy]
 resources :services, only:[:create, :index, :show, :update, :destroy]
 resources :portofolios, only:[:create, :index, :show, :destroy]

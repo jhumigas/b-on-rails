@@ -1,0 +1,19 @@
+<div class="blog-item"  ng-repeat="post in blog.posts| filter: searchText">
+    <!--<img class="img-responsive img-blog" src="../assets/images/blog/blog1.jpg" width="100%" alt="" />-->
+    <div class="blog-content">
+        <h3>{{post.title}}</h3>
+        <div class="entry-meta">
+            <span><i class="icon-user"></i> {{post.user.username}}</span>
+            <span><i class="icon-calendar"></i> {{post.created_at|date:'mediumDate'}}</span>
+            <span><i class="icon-thumbs-up"></i> {{post.upvotes}}</span>
+            <span><i class="icon-comment"></i> {{post.comments.length}}</span>
+        </div>
+        <p>{{post.abstract}}</p>
+        <a class="btn btn-default" ui-sref="blogItem({idpost: post.id})">Read More <i class="icon-angle-right"></i></a>
+    </div>
+</div><!--/.blog-item-->
+<ul class="pagination pagination-lg" ng-init="blog.initNumberOfPages(); blog.initCurrentPage()">
+    <li ng-if="blog.currentPage > 1 && blog.numberPages.length >1"><a ui-sref="page({page: blog.currentPage-1})"><i class="icon-angle-left"></i></a></li>
+    <li ui-sref-active="active" ng-repeat ="page in blog.numberPages track by $index"><a ui-sref="page({page: $index+1})"  class="pagenumber">{{$index+1}}</a></li>
+    <li ng-if="blog.currentPage < blog.numberPages.length && blog.numberPages.length >1"><a ui-sref="page({page: blog.currentPage+1})"><i class="icon-angle-right"></i></a></li>
+</ul><!--/.pagination-->

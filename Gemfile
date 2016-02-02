@@ -1,18 +1,23 @@
 source 'https://rubygems.org'
-# added 
+# Added gems
 # Managing components with bower
 gem 'bower-rails'
+# To support angular with rails
 gem 'angular-rails-templates'
 # To use font-awesome
 gem 'font-awesome-rails'
+# Adapter for mysql database
 gem 'mysql2', '~> 0.3.18'
+# Custom responders
 gem 'responders', '~> 2.0'
-#to support csrf token
+# Support for csrf token
 gem 'angular_rails_csrf'
 # For Picture processing
 gem 'mini_magick'
-# for files upload
+# For files upload
 gem 'carrierwave'
+# For paginating the blog
+gem 'will_paginate', '~> 3.0.6'
 
 # For authentification
 gem 'devise', '~> 3.4.0'
@@ -41,8 +46,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-#Sprockets
+# Sprockets
 gem 'sprockets', '3.3.4'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

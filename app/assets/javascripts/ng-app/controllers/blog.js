@@ -6,7 +6,7 @@
 		.controller('blogCtrl',blogCtrl);
 		
 		function posts($http){
-			var o = {posts: []};
+			var o = {posts: [], numberOfPages : 0};
 				o.getAll = function(){
 					return $http.get('/posts.json').success(function(data){
 						angular.copy(data,o.posts);
@@ -27,6 +27,17 @@
 						return data;
 					});
 				};
+                o.getPage = function(page){
+                    return $http.get('/posts/page/'+page+'.json').success(function(data){
+                        angular.copy(data,o.posts);
+                    });
+                }
+                o.getNumberOfPages = function(){
+                    return $http.get('/posts/paginate/numberofpages.json').success(function(data){
+                        o.numberOfPages = data;
+                        return data;
+                    });
+                }
 				o.update = function(id,post){
 					return $http.put('/posts/'+id+'.json',post).success(function(res){	
 					});
@@ -45,11 +56,21 @@
 					};
 			return o;
 		}
-		function blogCtrl(posts,$state){
+		function blogCtrl(posts,$stateParams,$state){
 			
 			/* jshint validthis: true */
 			var blog = this;
-			
+			blog.numberOfPages = posts.numberOfPages;
+            blog.numberPages = [];
+            blog.currentPage = 1;
+            blog.initNumberOfPages = function(){
+                for(var i = 0; i < blog.numberOfPages;i++){
+                    blog.numberPages.push(i);
+                }
+            }
+            blog.initCurrentPage = function(){
+                blog.currentPage= parseInt($stateParams.page);
+            }
 			blog.posts= posts.posts;
 			blog.addPost = function(){
 				if(!blog.title || blog.title === '') { return; }

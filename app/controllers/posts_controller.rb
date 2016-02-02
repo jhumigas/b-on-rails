@@ -3,6 +3,12 @@ class PostsController < ApplicationController
 	def index
 		respond_with Post.all
 	end
+    def get_page
+        respond_with Post.paginate(:page => params[:page], :per_page => 10)
+    end
+    def get_number_of_pages
+        respond_with ((Post.count).to_f/10).ceil
+    end
 	def show
 		respond_with Post.find(params[:id])
 	end

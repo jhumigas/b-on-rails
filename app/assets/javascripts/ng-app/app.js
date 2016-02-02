@@ -77,8 +77,19 @@
                         parent: 'layout',
                         controller: 'blogCtrl as blog',
                         resolve: {
-                            postPromise: ['posts', function(posts){
-                                return posts.getAll();
+                            numberofPages: ['posts', function(posts){
+                                return posts.getNumberOfPages();
+                            }]
+                            }
+                    })
+                    .state('page', {
+                        url: '/{page}',
+                        templateUrl: '../assets/blog-page.html',
+                        parent: 'blog',
+                        controller: 'blogCtrl as blog',
+                        resolve: {
+                            postPromise: ['posts','$stateParams', function(posts,$stateParams){
+                                return posts.getPage($stateParams.page);
                             }]
                             }
                     })
