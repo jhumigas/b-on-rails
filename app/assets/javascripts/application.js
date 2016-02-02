@@ -18,6 +18,7 @@
 //= require angular-rails-templates
 //= require angular-bootstrap
 //= require ng-file-upload
+//= require angular-sanitize
 //= require angular-devise/lib/devise
 //= require_tree .
 //= require_tree ../templates

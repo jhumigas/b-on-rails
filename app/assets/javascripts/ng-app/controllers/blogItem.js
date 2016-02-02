@@ -34,8 +34,9 @@
 					title: blogItem.post.title,
 					abstract: blogItem.post.abstract, 
 					body: blogItem.post.body
+					}).success(function(res){	
+                       blogItem.editionEnabled = false;
 					});
-				blogItem.editionEnabled = false;
 				}	
 			};
 			blogItem.delete = function(){

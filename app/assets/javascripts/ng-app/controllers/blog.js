@@ -39,8 +39,7 @@
                     });
                 }
 				o.update = function(id,post){
-					return $http.put('/posts/'+id+'.json',post).success(function(res){	
-					});
+					return $http.put('/posts/'+id+'.json',post);
 				};
 				o.delete = function(id){
 					return $http.delete('/posts/'+id+'.json').then(function(res){

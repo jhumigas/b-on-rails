@@ -5,6 +5,7 @@
         .module('myApp', 
         [
             'ngAnimate',
+            'ngSanitize',
             'ui.router',
           //  'ui.bootstrap',
             'templates',

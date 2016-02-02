@@ -59,21 +59,21 @@
                             <span ng-show="layout.signedIn()" ng-click="blogItem.incrementUpvotes(blogItem.post)"><a><i class="icon-thumbs-up"></i> {{blogItem.post.upvotes}}</a></span>
                             <span><i class="icon-comment"></i> {{blogItem.post.comments.length}}</span>      
                         </div>
-                        <p class="lead" ng-hide="editionEnabled">{{blogItem.post.abstract}}</p>
-                        <div class="form-group" ng-show="editionEnabled">
+                        <p class="lead" ng-hide="blogItem.editionEnabled">{{blogItem.post.abstract}}</p>
+                        <div class="form-group" ng-show="blogItem.editionEnabled">
                             <div class="col-sm-12">
                                 <input type="text" class="form-control" placeholder="Abstract" ng-model="blogItem.post.abstract">
                             </div>
                         </div>
-                        <p ng-hide="editionEnabled">{{blogItem.post.body}}</p>
-                        <div class="form-group" ng-show="editionEnabled">
+                        <p ng-hide="blogItem.editionEnabled" ng-bind-html="blogItem.post.body">{{blogItem.post.body}}</p>
+                        <div class="form-group" ng-show="blogItem.editionEnabled">
                             <div class="col-sm-12">
                                 <textarea rows="8" class="form-control" placeholder="body" ng-model="blogItem.post.body"></textarea>
                             </div>
                         </div>
                         <div class="btn-group" role="group" aria-label="..." ng-show="layout.signedIn()">
-                            <button class="btn btn-warning btn-sm" ng-click="editionEnabled=!editionEnabled"><i class="icon-edit"></i></button>
-                            <button class="btn btn-success btn-sm" ng-click="blogItem.update()" ng-show="editionEnabled"><i class="icon-ok"></i></button>
+                            <button class="btn btn-warning btn-sm" ng-click="blogItem.editionEnabled=!blogItem.editionEnabled"><i class="icon-edit"></i></button>
+                            <button class="btn btn-success btn-sm" ng-click="blogItem.update()" ng-show="blogItem.editionEnabled"><i class="icon-ok"></i></button>
                             <button class="btn btn-danger btn-sm" ng-click="blogItem.delete()"><i class="fa fa-times"></i></button>
                         </div>
                         <hr>
