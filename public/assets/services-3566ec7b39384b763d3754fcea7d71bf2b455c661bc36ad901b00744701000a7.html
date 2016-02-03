@@ -1,0 +1,139 @@
+<section id="title" class="emerald">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Notre action</h1>
+                <p></p>
+            </div>
+            <div class="col-sm-6">
+                <ul class="breadcrumb pull-right">
+                    <li><a ui-sref="home">Accueil</a></li>
+                    <li class="active">Projets</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section><!--/#title-->     
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="center gap">
+                    <h2>Notre projet</h2>
+                    <p>Nous pensons sincèrement que l’éducation est un droit inaliénable et sera le principal facteur de progrès. C'est pourquoi nous nous efforçons d'améliorer les conditions d'apprentissage des jeunes sous tous les aspects</p>
+                </div>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-md"><i class="fa fa-graduation-cap"></i></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Education</h3>
+                        <p>Démarche intégrée de la construction de salles d'étude aux cours particuliers et suivi sur le long terme.</p>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-heart icon-md"></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Santé</h3>
+                        <p>Eau potable, latrine</p>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-md"> <i class="fa fa-child"></i></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Energie renouvelable</h3>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+        </div><!--/.row-->
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="center gap">
+                     <h2 >Présentation succinte du projet actuel</h2>
+                     <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/ciujuqn-rb1w/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWkRDVE93YVVDTVN5dWF2eDNlZVpKMUF2RXBIdTQ1QjlrU0F5d0VwNU41bTByQ2VOUzJNUUNqcVcrbm0rZz09&amp;landing_sign=FkHD7gQdslmCBWX8z8y-kNK685yZYnTc2Ss9V8e1CQY"></iframe>
+                </div>
+            </div>
+        </div><!--/.row-->
+        <div class="row col-md-12">
+            <div class="blog" ng-repeat="item in service.services track by $index">
+                <div class="blog-item">
+                    <div class="blog-content">
+                        <h2>{{item.title}}</h2>
+                        <a class="pull-right btn btn-social btn-danger" ng-show="layout.signedIn()" ng-click="service.deleteService(item)"><i class="fa fa-times"></i></a>
+                        <a class="pull-right btn btn-social btn-warning" ng-show="layout.signedIn() && !editableForm" ng-click="editableForm=!editableForm"><i class="icon-edit"></i></a>
+                        <a class="pull-right btn btn-social btn-success" ng-show="layout.signedIn() && editableForm" ng-click="service.update(item);editableForm=!editableForm "><i class="icon-ok"></i></a>
+                        <blockquote>
+                        <p class="lead">{{item.typeService}}</p>
+                        </blockquote>
+                        <p ng-hide="editableForm">{{item.description}}</p>
+                        <div class="form-group" ng-show="editableForm">
+                            <div class="col-sm-12">
+                                <textarea rows="8" class="form-control" placeholder="body" ng-model="item.description"></textarea>
+                            </div>
+                        </div>
+                        <hr>
+                        <p>&nbsp;</p>
+                    </div>
+                </div><!--/.blog-item-->
+            </div>
+            <div ng-show="layout.signedIn()">
+                <h3>Create a Service</h3>
+                <form class="form-horizontal" role="form" name="serviceForm">
+                    <div class="form-group">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="Title" ng-model="service.title" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="Type du projet (projet, mission, campus, etc)" ng-model="service.typeService" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <textarea rows="8" class="form-control" placeholder="body" ng-model="service.description" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg" ng-click="service.addService()" ng-disabled="serviceForm.$error.required">Submit Post</button>
+                </form>
+            </div><!--/#service-form-->
+        </div><!--/.col-md-8-->
+        <div class="gap"></div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center">
+                    <h2>L'actualité du projet</h2>
+                </div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <blockquote>
+                            <p> A la suite de la première mission réussie en collaboration avec l’ERJ, Africa Unite a choisi de se lancer de nouveaux défis en se donnant pour objectif de développer intégralement un nouveau centre éducatif, culturel et autonome au Burkina Faso. L’aventure a commencé par l’achat d’un terrain de 935m² dans un futur quartier résidentiel proche de Bobo-Dioulasso, ne disposant pas d’un tel centre.</p>
+                            <small>Mathieu Delattre, <cite title="Source Title">Projet 2014</cite></small>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote>
+                            <p>Après l’achat du terrain, Africa Unite s’est donné comme objectif immédiat la construction d’une première salle d’étude. En effet, l’objectif premier d’Africa Unite est l’accès à l’éducation. A ce titre, la construction rapide d’une salle apporte une première réponse aux besoins burkinabè.</p>
+                            <small>Grégoire Boudoux, <cite title="Source Title">Président d'Africa Unite</cite></small>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#services-->

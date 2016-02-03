@@ -1,0 +1,92 @@
+<section id="title" class="emerald">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Blog</h1>
+                <p>Quelques articles sur les thèmes qui nous tiennent à coeur.</p>
+            </div>
+            <div class="col-sm-6">
+                <ul class="breadcrumb pull-right">
+                    <li><a ui-sref="home">Accueil</a></li>
+                    <li class="active">Blog</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section><!--/#title--> 
+<section id="blog" class="container">
+    <div class="row">
+        <aside class="col-sm-4 col-sm-push-8">
+            <div class="widget search">
+                <form role="form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" autocomplete="off" placeholder="Search" ng-model="searchText.title">
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                </form>
+            </div><!--/.search-->
+
+            <div class="widget ads">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="https://www.mazarsrecrute.fr/challengeinnovation/"><img class="img-responsive img-rounded" src="../assets/images/ads/mazar.png" alt=""></a>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <a href="http://www.lesamisdepaul.org/"><img class="img-responsive img-rounded" src="../assets/images/ads/apl.bmp" alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="http://www.forum-centrale-supelec.fr/"><img class="img-responsive img-rounded" src="../assets/images/ads/forumcs.png" alt=""></a>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <a href="http://www2.deloitte.com/fr/fr/pages/presse/2015/la-fondation-deloitte-poursuit-ses-actions-aupres-des-etudiants.html"><img class="img-responsive img-rounded" src="../assets/images/ads/fondation_dentreprise_deloitte.jpg" alt=""></a>
+                    </div>
+                </div>
+                <p> </p>
+            </div><!--/.ads-->     
+
+            <div class="widget facebook-fanpage">
+                <h3>Page Facebook</h3>
+                <div class="widget-content">
+                    <div class="fb-page" data-href="https://www.facebook.com/Africa-Unite-487859707941654/timeline/" 
+                    data-small-header="false" data-adapt-container-width="true" 
+                    data-hide-cover="false" data-show-facepile="true" 
+                    data-show-posts="true">
+                    </div>
+            </div>
+            </div>
+           <div class="gap"></div>
+        </aside>        
+        <div class="col-sm-8 col-sm-pull-4">
+            <div class="blog">
+                <ui-view class="blog"></ui-view>
+                <div ng-show="layout.signedIn()">
+                    <h3>Create a Post</h3>
+                    <form class="form-horizontal" role="form" name="PostForm">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Title" ng-model="blog.title" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Abstract" ng-model="blog.abstract" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <textarea rows="8" class="form-control" placeholder="body" ng-model="blog.body" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-lg" ng-click="blog.addPost()" ng-disabled ="PostForm.$error.required">Submit Post</button>
+                    </form>
+                </div><!--/#post-form-->
+            </div>
+        </div><!--/.col-md-8-->
+    </div><!--/.row-->
+</section><!--/#blog-->

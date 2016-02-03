@@ -1,0 +1,54 @@
+<section id="title" class="emerald">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Registration</h1>
+                <p> Pour les utilisateurs authentifiés</p>
+            </div>
+            <div class="col-sm-6">
+                <ul class="breadcrumb pull-right">
+                    <li><a ui-sref="home">Home</a></li>
+                    <li class="active">Registration</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section><!--/#title-->     
+
+<!--<section id="registration" class="container">
+    <form class="center" role="form">
+        <fieldset class="registration-form">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Username" class="form-control" ng-model="user.username">
+            </div>
+            <div class="form-group">
+                <input type="text" id="email" name="email" placeholder="E-mail" class="form-control" ng-model="user.email">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" class="form-control" ng-model="user.password">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password_confirm" name="password_confirm" placeholder="Password (Confirm)" class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success btn-md btn-block" ng-click="register()">Register</button>
+            </div>
+        </fieldset>
+    </form>
+</section><!--/#registration-->
+
+<section id="registration" class="container">
+    <form class="center" role="form">
+        <fieldset class="registration-form">
+            <div class="form-group">
+                <input type="text" id="email" name="email" placeholder="E-mail" class="form-control" ng-model="authCtrl.user.email">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" class="form-control" ng-model="authCtrl.user.password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success btn-md btn-block" ng-click="authCtrl.login()">Log In</button>
+            </div>
+        </fieldset>
+    </form>
+</section><!--/#login-->
