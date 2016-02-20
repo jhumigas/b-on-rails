@@ -1,7 +1,8 @@
 # b-on-rails
 
-I'm *still* building this app for a students NGO. It's meant to be pretty basic, with blog-like features. 
-The user can manage member, posts, and services.
+I  built this app for a students NGO. It's meant to be pretty basic, with blog-like features. 
+The user can manage member, posts, and projects.
+
 It is made to combine both AngularJS and Rails. 
 
 Find here the working board : [Trello] (https://trello.com/b/yEB6ZDxF/ruby-project)
@@ -18,6 +19,9 @@ rake bower:install
 ```
 
 to install the modules required by angular.
+For some unknown reasons, rake bower:install does not install the required packages. 
+For the time being, the modules are installed manually directly from the git repo.
+
 Don't forget 
 ```sh
 rake db:create
@@ -40,12 +44,12 @@ This application requires :
 This application uses [AngularJS](https://angularjs.org/)
 
 Angular Modules required :
-* ngAnimate
-* ui.bootstrap
-* ui-router > manages the routings on the client-side service 
-* templates
-* ngFileUpload
-* Devise
+* [angular-animate](https://github.com/angular/bower-angular-animate.git) : provides [animation hooks](https://docs.angularjs.org/guide/animations) for common directives such as ngRepeat, ngSwitch, and ngView, as well as custom directives via the $animate service. 
+* [angular-ui-router](https://github.com/angular-ui/ui-router) manages the routings on the client-side service 
+* [angular-bootstrap](https://angular-ui.github.io/bootstrap/) : bootstrap components written in pure angular
+* [ng-file-upload](https://github.com/danialfarid/ng-file-upload) : an awesome Lightweight Angular directive to upload files with optional FileAPI shim for cross browser support
+* [angular-devise](https://github.com/cloudspace/angular_devise) : A small AngularJS Service to interact with *Devise* Authentication.
+* [angular-sanitize](https://github.com/angular/bower-angular-sanitize) : Sanitizes an html string by stripping all potentially dangerous tokens.
 
 To make sure that Rails allows angular to handle our client side routing, the following two lines were added in app/assets/javascripts/application.js:
 ```sh
@@ -90,4 +94,12 @@ The **ngControllers** can be found at : app/assets/javascripts/ng-app/controller
 In few words, the app.js sets the front-end configuration. Each controller is associated to a service that provides that data needed in a given page.
 For example, in app/assets/javascripts/ng-app/controllers/blog.js there is : the posts services that provides blog posts to the BlogCtrl, which in return 
 manages the blog-item.html.erb found in app/assets/templates/. 
+
+# Contributing
+
+For Supélec devs out there, if you want to contribute to the project feel free to clone the repo.
+
+# License
+
+* [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
