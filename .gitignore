@@ -34,5 +34,6 @@ config/secrets.yml
 # Ignore pow environment settings
 .powenv
 
-# Ignore WebStorm files
+# Ignore IDE files
 .idea
+.vscode
