@@ -66,10 +66,10 @@
                 for(var i = 0; i < blog.numberOfPages;i++){
                     blog.numberPages.push(i);
                 }
-            }
+            };
             blog.initCurrentPage = function(){
                 blog.currentPage= parseInt($stateParams.page);
-            }
+            };
 			blog.posts= posts.posts;
 			blog.addPost = function(){
 				if(!blog.title || blog.title === '') { return; }
