@@ -9,16 +9,20 @@
 			
 			/* jshint validthis: true */
 			var authCtrl = this;
-			authCtrl.login = function() {
+			authCtrl.login = login;
+            authCtrl.register = register;
+            
+            
+            function login() {
 				Auth.login(authCtrl.user).then(function(){
 				$state.go('home');
 				});
-			};
+			}
 	
-			authCtrl.register = function() {
+            function register() {
 				Auth.register(authCtrl.user).then(function(){
 				$state.go('home');
 				});
-			};
+			}
 		}
 })();
