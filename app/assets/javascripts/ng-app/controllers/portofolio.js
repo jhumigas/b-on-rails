@@ -11,7 +11,7 @@
 			};
 		});
 	/**
-	 * Portofolios is the provider of portofolios rails controller services
+	 * Portofolios is the provider of portofolios rails controller services providing CRUD operations
 	 * @param $http
 	 * @param Upload
 	 * @returns {{portofolios: Array, getAll: getAll, create: create, delete: deletePortfolio}}
