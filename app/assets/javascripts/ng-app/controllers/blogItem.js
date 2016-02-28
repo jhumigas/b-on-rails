@@ -34,7 +34,7 @@
 		blogItem.deleteComment = deleteComment;
 
 		/**
-		 * Fetch an object post
+		 * Fetches the selected object post
 		 */
 		function init(){
 			blogItem.post = posts.get($stateParams.idpost).then(function(response){
@@ -43,7 +43,7 @@
 		}
 		//blogItem.post = $stateParams.post;
 		/**
-		 * Add one vote to a post
+		 * Adds one vote to a post
 		 * @param post
 		 */
 		function incrementUpvotes(post){
@@ -51,7 +51,7 @@
 		}
 
 		/**
-		 * Update a post given a new title, abstract and/or body
+		 * Updates a post given a new title, abstract and/or body
 		 */
 		function update(){
 			if(blogItem.post !== null)	{
@@ -66,7 +66,7 @@
 		}
 
 		/**
-		 * Delete one post
+		 * Deletes one post
 		 */
 		function deletePost(){
 			posts.delete(blogItem.post.id);
@@ -74,7 +74,7 @@
 		}
 
 		/**
-		 * Attach a new comment to a post
+		 * Attaches a new comment to a post
 		 * A comment only needs a body to be added
 		 */
 		function addComment(){
@@ -88,10 +88,11 @@
 			}
 
 		/**
-		 * Delete one comment attached to a post
-		 * @param comment
-		 * @param post
-		 * @param index
+		 * Deletes one comment attached to a post
+         * As a comment is attached to a post, the post owning the comment is mandatory to perform the delete operation
+		 * @param comment: a comment object from which the id is extracted
+		 * @param post: the post owning the comment
+		 * @param index: the rank of the comment in the comment's array
 		 */
 		function deleteComment(comment,post,index){
 			posts.deleteComment(post.id,comment.id).success(function(){

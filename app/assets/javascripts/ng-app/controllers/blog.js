@@ -7,7 +7,7 @@
 
     /**
 	 * The Posts Factory is wired to the Posts rails controller located in app/controllers/posts_controller.rb
-	 * Hence, a post JSON object is {title : string, abstract : string, body: string}
+	 * A post JSON object is {title : string, abstract : string, body: string}
 	 * @param $http core Angular Service to communicate to remote HTTP servers
 	 * @returns {{posts: Array, numberOfPages: number}}
      */
@@ -96,7 +96,8 @@
 		blog.addPost = addPost;
 
 		/**
-		 * Fetch number of post pages used to generate links
+		 * Fetches number of post pages
+         * Used to paginate
 		 */
 		function initNumberOfPages(){
 			for(var i = 0; i < blog.numberOfPages;i++){
@@ -112,7 +113,7 @@
 		}
 
 		/**
-		 * Add a new post item
+		 * Adds a new post item
 		 * Reset the to-be-added post to an empty blog
 		 */
 		function addPost(){

@@ -44,7 +44,7 @@
 		}
 
 		/**
-		 * Update one service object
+		 * Updates one service object
 		 * @param id : id of the service to update
 		 * @param service: new updated service
          * @returns {*}
@@ -56,7 +56,7 @@
 		}
 
 		/**
-		 * Delete one service object
+		 * Deletes one service object
 		 * @param id : id of the service to delelte
          * @returns {*}
          */
@@ -83,7 +83,7 @@
 		service.update = update;
 
 		/**
-		 * Add one service to the services array
+		 * Adds one service to the services array
 		 */
 		function addService(){
 				if(!service.title || service.title === '') { return; }
@@ -98,7 +98,7 @@
 		}
 
 		/**
-		 * A service to delete
+		 * Deletes a service
 		 * @param item : A service object from the service array to be deleted
 		 */
 		function deleteService(item){
@@ -106,7 +106,7 @@
 		}
 
 		/**
-		 * Update one service
+		 * Updates a given service
 		 * @param item
 		 */
 		function update(item){
@@ -117,6 +117,5 @@
 			});
 			service.editableForm = false;
 		}
-
 	}
 })();
