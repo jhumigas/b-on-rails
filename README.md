@@ -1,14 +1,13 @@
 # b-on-rails
 
-I  built this app for a students NGO. It's meant to be pretty basic, with blog-like features. 
+I  built this app for a students NGO. It's meant to be pretty basic, with blog-like features.
+
 The user can manage member, posts, and projects.
 
 It is made to combine both AngularJS and Rails. 
 
-Find here the working board : [Trello] (https://trello.com/b/yEB6ZDxF/ruby-project)
-To get access to it : [sign in](https://trello.com/) then prompt me to add you.
-
 Once you make sure you have rails set up on your system,
+
 run 
 ```sh
 bundle install 
@@ -32,6 +31,8 @@ for the database management.
 For the beginners in Rails or/and Angular, there are two main tutorials I recommend :
 * [JCole Morrison's tutorial](http://start.jcolemorrison.com/angularjs-rails-4-1-and-ui-router-tutorial/)
 * [Thinkster's tutorial](https://thinkster.io/angular-rails/)
+
+I actually started from a free Bootstrap template: [Flat Theme](https://shapebootstrap.net/item/1524965-flat-theme-free-responsive-multipurpose-site-template) then implemented AngularJS and Rails part.
 
 # Ruby on Rails 
 
@@ -97,7 +98,9 @@ manages the blog-item.html.erb found in app/assets/templates/.
 
 # Contributing
 
-For Supélec devs out there, if you want to contribute to the project feel free to clone the repo.
+/!\ This is just an archive /!\ 
+
+If you want to contribute to the project, the original [project](https://rezolab.rez-gif.supelec.fr/david.mugisha/b-on-rails) is opened to contribution from Supélec devs.
 
 # License
 
